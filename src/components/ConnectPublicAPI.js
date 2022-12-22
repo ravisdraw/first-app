@@ -19,7 +19,7 @@ function ConnectPublicAPI() {
         return (
             <div className='cards'>
                 <div className='image'>
-                    <img src={obj.imageUrl}></img>
+                    <img src={obj.imageUrl} alt='https://m.media-amazon.com/images/I/51jUqJYR5gS._AC_SS450_.jpg'></img>
                 </div>
                 <div className='name'>
                     {obj.name}
