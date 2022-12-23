@@ -1,9 +1,13 @@
-import './App.css';
-import ConnectPublicAPI from './components/ConnectPublicAPI'
+import './style.css'
+// import ConnectPublicAPI from './components/ConnectPublicAPI'
+import Welcome from './Welcome/Welcome';
 
 function App() {
   return (
-    <ConnectPublicAPI/>
+    // <ConnectPublicAPI/>
+    <div className='body'>
+      <Welcome />
+    </div>
   );
 }
 
