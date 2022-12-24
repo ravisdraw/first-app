@@ -1,6 +1,6 @@
 import './style.css'
 
-import ConnectPublicAPI from './components/ConnectPublicAPI'
+// import ConnectPublicAPI from './components/ConnectPublicAPI'
 import Welcome from './Welcome/Welcome';
 import Intro from './Welcome/Intro';
 import Resume from './Welcome/Resume';

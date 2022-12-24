@@ -16,7 +16,7 @@ function Projects() {
       <div className='projectWrapper'>
         <div className='projects'>
           <div className='projectIcon'>
-            <img src={stopwatch}></img>
+            <img src={stopwatch} alt='hi'></img>
           </div>
           <div className='projectTitle'>
             New Year Counter
