@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import './CommonStyling.css'
+// import './CommonStyling.css'
 import axios from 'axios'
 
 function ConnectPublicAPI() {

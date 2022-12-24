@@ -1,6 +1,7 @@
 import React from 'react'
 import hello from '../Assets/hello.png'
 import '../style.css'
+import { Link } from "react-router-dom";
 
 
 function Welcome() {
@@ -20,9 +21,11 @@ function Welcome() {
                 I hope you find something
                 that inspires you
             </div>
-            <div className='button'>
-                 <button>Get Started</button>
-            </div>
+            <Link to="intro">
+                <div className='button'>
+                    <button>Get Started</button>
+                </div>
+            </Link>
         </div>
     )
 }
