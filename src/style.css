@@ -76,6 +76,14 @@ button:active{
     width: 3.5rem;
 }
 
+.works button{
+    width: 5.8rem;
+}
+
+.menu button{
+    margin-top: 0.2rem;
+}
+
 
 
 @media (max-width:500px){

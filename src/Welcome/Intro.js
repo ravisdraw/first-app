@@ -23,10 +23,11 @@ function Intro() {
                 development and Testing.
             </div>
             <div className='group-btn'>
-                <div className='button pro'>
-                    <button>My Works</button>
-                </div>
-                <Link to="public_api">
+                <Link to='menu'>
+                    <div className='button pro'>
+                        <button>My Works</button>
+                    </div></Link>
+                <Link to="resume">
                     <div className='button pro holo'>
                         <button>Resume</button>
                     </div>
