@@ -10,7 +10,7 @@ function Menu() {
                 <img src={ready} alt='hi'></img>
             </div>
 
-            <Link to="/">
+            <Link to="projects">
                 <div className='button works menu'>
                     <button>Projects</button>
                 </div>

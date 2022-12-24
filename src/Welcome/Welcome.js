@@ -8,7 +8,7 @@ function Welcome() {
     return (
         <div className='container'>
             <div className='hello'>
-                <img src={hello} alt='hi'></img>
+                <img src={hello} alt='https://cdn-icons-png.flaticon.com/512/8027/8027486.png'></img>
             </div>
 
             <div className='para'>
