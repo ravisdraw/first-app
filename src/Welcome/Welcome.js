@@ -1,5 +1,4 @@
 import React from 'react'
-import hello from '../Assets/hello.png'
 import '../style.css'
 import { Link } from "react-router-dom";
 
@@ -7,25 +6,20 @@ import { Link } from "react-router-dom";
 function Welcome() {
     return (
         <div className='container'>
-            <div className='hello'>
-                <img src={hello} alt='https://cdn-icons-png.flaticon.com/512/8027/8027486.png'></img>
+            <div className='welcome-icon center'>
+                <iconify-icon icon="ion:code-slash"></iconify-icon>
             </div>
 
-            <div className='para'>
-                Hi there,
-                I'm thrilled that you're here
+
+            <div className='para center'>
+                <p>Welcome to my portfolio<br/>I hope you find something that inspires you</p>
             </div>
 
-            <div className='para'>
-                Welcome to my portfolio
-                I hope you find something
-                that inspires you
-            </div>
-            <Link to="intro">
-                <div className='button'>
+            <div className='button'>
+                <Link to="intro">
                     <button>Get Started</button>
-                </div>
-            </Link>
+                </Link>
+            </div>
         </div>
     )
 }
