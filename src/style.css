@@ -8,14 +8,14 @@
     font-size: 50px;
 }
 
-body{
+body {
     height: 100vh;
     width: 100vw;
-    overflow:hidden;
+    overflow: hidden;
     background-color: #4AB07E;
 }
 
-.container{
+.container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -27,59 +27,45 @@ body{
     overflow: hidden;
 }
 
-.center{
+/*************** WELCOME PAGE ************************/
+
+.center {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.welcome-icon{
+.welcome-icon {
     /* background-color: blue; */
     width: 100%;
     height: 40%;
 }
 
-.welcome-icon iconify-icon{
+.welcome-icon iconify-icon {
     font-size: 5rem;
     color: white;
     margin-top: 2rem;
 }
 
-.profile{
-    margin-top: 0.5rem;
-}
-
-.profile img{
-    width: 5rem;
-    box-shadow: rgba(12, 12, 12, 0.2) 0px 5px 10px;
-    border-radius: 50%;
-    margin-bottom: 0.5rem;
-}
-
-.para{  
+.para {
     /* background-color: brown; */
     width: 100%;
     height: 20%;
 }
 
-.para p{
+.para p {
     font-size: 0.5rem;
     color: white;
     font-weight: 500;
 }
 
-.button{
+.button {
     /* background-color: pink; */
     width: 100%;
     height: 40%;
 }
 
-.group-btn{
-    display: flex;
-    gap: 0.6rem;
-}
-
-button{
+button {
     border: none;
     font-size: 0.5rem;
     padding: 0.3rem;
@@ -90,37 +76,118 @@ button{
     background-color: white;
     cursor: pointer;
     font-weight: 500;
+    height: 1.5rem;
 }
 
-button:active{
+button:active {
     transform: scale(0.98);
 }
 
-.holo button{
-    border: 0.1rem solid #1D70B8;
+/*************** HOME PAGE ************************/
+
+.intro {
     background-color: white;
-    color: #1D70B8;
-    height: 1.4rem;
-    text-align: center;
-    padding: 0.2rem;
 }
 
-.pro button{
-    width: 3.5rem;
+.tile {
+    width: 100%;
 }
 
-.works button{
-    width: 5.8rem;
+.title-card {
+    height: 15%;
+    display: flex;
 }
 
-.menu button{
-    margin-top: 0.2rem;
+.para-intro {
+    width: 50%;
+    display: flex;
+    justify-content: center; /* align vertically */
+    flex-direction: column;
+}
+
+.para-intro p{
+    text-align: left;
+    margin-left: 0.5rem;
+}
+
+.para-intro p:nth-of-type(1) {
+    color: black;
+    font-size: 0.4rem;
+}
+
+.para-intro p:nth-of-type(2) {
+    color: #4AB07E;
+    font-size: 0.4rem;
+}
+
+.para-intro p:nth-of-type(3) {
+    color: #9C9C9C;
+    font-size: 0.3rem;
+}
+
+.profile {
+    /* background-color: black; */
+    width: 50%;
+    display: flex;
+    justify-content: center; /* align vertically */
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.profile img{
+    width: 1.2rem;
+    margin-right: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 1rem;
+}
+
+.project {
+    /* background-color: blue; */
+    height: 18%;
+}
+
+.titles{
+    /* background-color: red; */
+    height: 20%;
+}
+
+.titles p{
+    font-size: 0.4rem;
+    color: black;
+    text-align: left;
+    margin-left: 0.5rem;
+}
+
+.project-tiles{
+    /* background-color: orange; */
+    height: 80%;
+    display: flex;
+}
+
+.project-box{
+    background-color: palevioletred;
+    height: 80%;
+    width: 5rem;
+    border-radius: 0.3rem;
+    margin-left: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.certifications {
+    background-color: yellow;
+    height: 40%;
+}
+
+.nav-menu {
+    background-color: green;
+    height: 20%;
 }
 
 
+/*************** Responsive ************************/
 
-@media (max-width:500px){
-  *{
-    font-size: 40px;
-  }
+@media (max-width:500px) {
+    * {
+        font-size: 40px;
+    }
 }
