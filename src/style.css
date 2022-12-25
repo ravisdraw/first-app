@@ -96,13 +96,15 @@ button:active {
 .title-card {
     height: 15%;
     display: flex;
+    /* background-color: red; */
 }
 
 .para-intro {
-    width: 50%;
+    width: 60%;
     display: flex;
     justify-content: center; /* align vertically */
     flex-direction: column;
+    /* background-color: red; */
 }
 
 .para-intro p{
@@ -112,17 +114,18 @@ button:active {
 
 .para-intro p:nth-of-type(1) {
     color: black;
-    font-size: 0.4rem;
+    font-size: 0.5rem;
 }
 
 .para-intro p:nth-of-type(2) {
     color: #4AB07E;
-    font-size: 0.4rem;
+    font-size: 0.42rem;
 }
 
 .para-intro p:nth-of-type(3) {
     color: #9C9C9C;
-    font-size: 0.3rem;
+    font-size: 0.25rem;
+    margin-top: 0.1rem;
 }
 
 .profile {
@@ -143,43 +146,58 @@ button:active {
 
 .project {
     /* background-color: blue; */
-    height: 18%;
+    height: 30%;
+    display: flex;
 }
 
 .titles{
     /* background-color: red; */
-    height: 20%;
+    height: 10%;
+    width: 100%;
 }
 
 .titles p{
-    font-size: 0.4rem;
+    font-size: 0.45rem;
     color: black;
     text-align: left;
-    margin-left: 0.5rem;
+    margin: 0.4rem;
 }
 
 .project-tiles{
-    /* background-color: orange; */
-    height: 80%;
+    /* background-color: rgb(34, 255, 0); */
     display: flex;
+    overflow-x: auto;
 }
 
-.project-box{
-    background-color: palevioletred;
-    height: 80%;
-    width: 5rem;
+.project-tiles::-webkit-scrollbar{
+    height: 0.2rem;
+}
+
+.project-tiles::-webkit-scrollbar-thumb{
+    background-color: #4AB07E;
+    border-radius: 1rem;
+}
+
+.project-tiles .project-box{
+    margin-top: 0.2rem;
+    background-color: #FF4171;
+    max-height: 2.5rem;
+    min-width: 3.3rem;
     border-radius: 0.3rem;
     margin-left: 0.5rem;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    cursor: pointer;
+    color: white;
+    margin-bottom: 0.2rem
 }
 
 .certifications {
-    background-color: yellow;
-    height: 40%;
+    /* background-color: yellow; */
+    height: 35%;
 }
 
 .nav-menu {
-    background-color: green;
+    /* background-color: green; */
     height: 20%;
 }
 
@@ -189,5 +207,15 @@ button:active {
 @media (max-width:500px) {
     * {
         font-size: 40px;
+    }
+
+    .project-tiles::-webkit-scrollbar{
+        width: 0;
+        visibility: hidden;
+    }
+
+    .project-tiles::-webkit-scrollbar-thumb{
+        width: 0;
+        visibility: hidden;
     }
 }

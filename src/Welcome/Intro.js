@@ -17,19 +17,24 @@ function Intro() {
                     <img src={profile} alt='hi'></img>
                 </div>
             </div>
-            <div className='tile project'>
-                <div className='titles'>
+            <div className='titles'>
                     <p>Projects</p>
                 </div>
+            <div className='tile project'>
                 <div className='project-tiles'>
-                    <div className='project-box'></div>
-                    <div className='project-box'></div>
-                    <div className='project-box'></div>
-                    <div className='project-box'></div>
+                    <div className='project-box'>1</div>
+                    <div className='project-box'>2</div>
+                    <div className='project-box'>3</div>
+                    <div className='project-box'>4</div>
+                    <div className='project-box'>5</div>
                 </div>
 
             </div>
-            <div className='tile certifications'></div>
+            <div className='tile certifications'>
+            <div className='titles'>
+                    <p>certifications</p>
+                </div>
+            </div>
             <div className='tile nav-menu'></div>
         </div>
     )
