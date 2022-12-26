@@ -97,10 +97,11 @@ button:active {
     height: 15%;
     display: flex;
     /* background-color: red; */
+    padding: 0.2rem;
 }
 
 .para-intro {
-    width: 60%;
+    width: 80%;
     display: flex;
     justify-content: center; /* align vertically */
     flex-direction: column;
@@ -110,27 +111,28 @@ button:active {
 .para-intro p{
     text-align: left;
     margin-left: 0.5rem;
+    font-weight: 600;
 }
 
 .para-intro p:nth-of-type(1) {
     color: black;
-    font-size: 0.5rem;
+    font-size: 0.6rem;
 }
 
 .para-intro p:nth-of-type(2) {
     color: #4AB07E;
-    font-size: 0.42rem;
+    font-size: 0.5rem;
 }
 
 .para-intro p:nth-of-type(3) {
     color: #9C9C9C;
-    font-size: 0.25rem;
+    font-size: 0.3rem;
     margin-top: 0.1rem;
 }
 
 .profile {
     /* background-color: black; */
-    width: 50%;
+    width: 20%;
     display: flex;
     justify-content: center; /* align vertically */
     flex-direction: column;
@@ -146,7 +148,7 @@ button:active {
 
 .project {
     /* background-color: blue; */
-    height: 30%;
+    height: 22%;
     display: flex;
 }
 
@@ -157,10 +159,11 @@ button:active {
 }
 
 .titles p{
-    font-size: 0.45rem;
+    font-size: 0.5rem;
     color: black;
     text-align: left;
     margin: 0.4rem;
+    font-weight: 600;
 }
 
 .project-tiles{
@@ -170,7 +173,7 @@ button:active {
 }
 
 .project-tiles::-webkit-scrollbar{
-    height: 0.2rem;
+    height: 0.3rem;
 }
 
 .project-tiles::-webkit-scrollbar-thumb{
@@ -179,16 +182,20 @@ button:active {
 }
 
 .project-tiles .project-box{
-    margin-top: 0.2rem;
+    /* margin-top: 0.2rem; */
     background-color: #FF4171;
-    max-height: 2.5rem;
-    min-width: 3.3rem;
+    max-height: 3rem;
+    min-width: 3.8rem;
     border-radius: 0.3rem;
     margin-left: 0.5rem;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     cursor: pointer;
     color: white;
     margin-bottom: 0.2rem
+}
+
+.certi{
+    min-width: 5rem;
 }
 
 .certifications {

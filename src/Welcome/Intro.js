@@ -6,7 +6,6 @@ import '../style.css'
 function Intro() {
     return (
         <div className='container intro'>
-
             <div className='tile title-card'>
                 <div className='para-intro'>
                     <p>I’m Ravikumar,</p>
@@ -18,21 +17,25 @@ function Intro() {
                 </div>
             </div>
             <div className='titles'>
-                    <p>Projects</p>
-                </div>
+                <p>Projects</p>
+            </div>
             <div className='tile project'>
                 <div className='project-tiles'>
                     <div className='project-box'>1</div>
                     <div className='project-box'>2</div>
                     <div className='project-box'>3</div>
                     <div className='project-box'>4</div>
-                    <div className='project-box'>5</div>
                 </div>
-
             </div>
-            <div className='tile certifications'>
             <div className='titles'>
                     <p>certifications</p>
+                </div>
+            <div className='tile certifications'>
+            <div className='project-tiles'>
+                    <div className='project-box certi'>1</div>
+                    <div className='project-box'>2</div>
+                    <div className='project-box'>3</div>
+                    <div className='project-box'>4</div>
                 </div>
             </div>
             <div className='tile nav-menu'></div>

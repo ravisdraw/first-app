@@ -10,7 +10,6 @@ function Welcome() {
                 <iconify-icon icon="ion:code-slash"></iconify-icon>
             </div>
 
-
             <div className='para center'>
                 <p>Welcome to my portfolio<br/>I hope you find something that inspires you</p>
             </div>
