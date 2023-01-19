@@ -18,7 +18,7 @@ function WelcomePage() {
                 </div>
 
                 <div className='button'>
-                    <Link to="intro">
+                    <Link to="home">
                         <button>Get Started</button>
                     </Link>
                 </div>
