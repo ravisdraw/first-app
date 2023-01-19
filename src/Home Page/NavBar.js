@@ -2,11 +2,22 @@ import React from 'react'
 import './Home.css'
 import { Icon } from '@iconify/react';
 import profile from '../Assets/profile.png'
+import { Divide as Hamburger } from 'hamburger-react'
 
 function NavBar() {
     return (
         <div className='nav-bar'>
             <div className="menuicons">
+
+                <div className="mobile-nav">
+                    <div className="hamburger">
+                        <Hamburger size={28} />
+                    </div>
+                    <div className="proverb">
+                        <p>Practice leads to perfection</p>
+                    </div>
+                </div>
+
                 <div className="icons">
                     <Icon icon="ic:sharp-home" />
                     <label>Home</label>
