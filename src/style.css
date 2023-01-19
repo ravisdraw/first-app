@@ -5,14 +5,14 @@
     padding: 0;
     font-family: 'Poppins',
         sans-serif;
-    font-size: 50px;
+    font-size: 40px;
 }
 
 body {
     height: 100vh;
     width: 100vw;
-    overflow: hidden;
-    background-color: #4AB07E;
+    /* overflow: hidden;
+    background-color: #4AB07E; */
 }
 
 .container {
@@ -328,7 +328,7 @@ button:active {
     height: 150px;
 }
 
-.menuicons{
+.menuicons {
     height: 1.7rem;
     display: flex;
     color: white;
@@ -336,7 +336,7 @@ button:active {
     gap: 2.5rem;
 }
 
-.icons{
+.icons {
     display: grid;
     align-items: center;
     place-items: center;
@@ -347,6 +347,6 @@ button:active {
     font-size: 0.35rem;
 }
 
-.icons > :first-child{
+.icons> :first-child {
     font-size: 0.8rem;
 }
