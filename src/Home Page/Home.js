@@ -6,7 +6,7 @@ import Tag from './Tag'
 
 function Home() {
     return (
-        <div>
+        <div className='home'>
             <Navbar />
             <Tag />
             <Projects />
