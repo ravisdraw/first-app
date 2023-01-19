@@ -193,17 +193,17 @@
 
     .nav-bar {
         border-radius: 0.5rem;
-        width: 80%;
+        width: 90%;
         margin: 0 auto;
     }
 
     .menuicons {
-        height: 1.7rem;
+        height: 2rem;
         display: flex;
         color: white;
         justify-content: center;
         align-items: center;
-        gap: 0.8rem;
+        gap: 0.4rem;
     }
 
     .profile img {
