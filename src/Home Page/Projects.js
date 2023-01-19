@@ -22,7 +22,7 @@ function Projects() {
         { text: "item 4" }
     ]
     return (
-        <div className='projects'>
+        <div>
             <div className='titles'>
                 <p>Projects</p>
             </div>
