@@ -9,6 +9,7 @@
     background: linear-gradient(to bottom right, #111111, #353535);
     height: 11%;
     width: 100%;
+    overflow: hidden;
 }
 
 .menuicons {
@@ -182,6 +183,10 @@
 /********** RESPONSIVE SCREEN *********/
 
 @media screen and (max-width: 500px) {
+    * {
+        font-size: 30px;
+    }
+
     .desk {
         display: none;
     }
