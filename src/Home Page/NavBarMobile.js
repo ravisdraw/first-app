@@ -3,9 +3,9 @@ import './Home.css'
 import { Icon } from '@iconify/react';
 import profile from '../Assets/profile.png'
 
-function NavBar() {
+function NavBarMobile() {
     return (
-        <div className='nav-bar desk'>
+        <div className='nav-bar mobile'>
             <div className="menuicons">
                 <div className="icons">
                     <Icon icon="ic:sharp-home" />
@@ -31,4 +31,4 @@ function NavBar() {
     )
 }
 
-export default NavBar
+export default NavBarMobile

@@ -177,3 +177,37 @@
     width: 6.25rem;
     height: 3.75rem;
 }
+
+
+/********** RESPONSIVE SCREEN *********/
+
+@media screen and (max-width: 500px) {
+    .desk {
+        display: none;
+    }
+
+    .nav-bar {
+        border-radius: 0.5rem;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .menuicons {
+        height: 1.7rem;
+        display: flex;
+        color: white;
+        justify-content: center;
+        align-items: center;
+        gap: 0.8rem;
+    }
+
+    .profile img {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .mobile {
+        display: none;
+    }
+}
