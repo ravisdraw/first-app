@@ -5,7 +5,7 @@ import profile from '../Assets/profile.png'
 
 function NavBar() {
     return (
-        <div className='nav-bar desk'>
+        <div className='nav-bar'>
             <div className="menuicons">
                 <div className="icons">
                     <Icon icon="ic:sharp-home" />

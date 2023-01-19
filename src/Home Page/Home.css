@@ -184,35 +184,11 @@
 
 @media screen and (max-width: 500px) {
     * {
-        font-size: 30px;
-    }
-
-    .desk {
-        display: none;
-    }
-
-    .nav-bar {
-        border-radius: 0.5rem;
-        width: 90%;
-        margin: 0 auto;
+        font-size: 35px;
     }
 
     .menuicons {
-        height: 2rem;
-        display: flex;
-        color: white;
-        justify-content: center;
-        align-items: center;
-        gap: 0.4rem;
+        gap: 0.5rem;
     }
 
-    .profile img {
-        display: none;
-    }
-}
-
-@media screen and (min-width: 500px) {
-    .mobile {
-        display: none;
-    }
 }
