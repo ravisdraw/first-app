@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react'
+import React, {useRef } from 'react'
 import profile from '../Assets/profile.png'
 import '../style.css'
 import { Icon } from '@iconify/react';
@@ -62,7 +62,7 @@ function Intro() {
                         <label>Hire Me</label>
                     </div>
                     <div className='profile'>
-                        <img src={profile} alt='Profile Picture'></img>
+                        <img src={profile} alt='Profile'></img>
                     </div>
                 </div>
             </div>
