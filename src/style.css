@@ -103,12 +103,13 @@ button:active {
 .para-intro {
     width: 80%;
     display: flex;
-    justify-content: center; /* align vertically */
+    justify-content: center;
+    /* align vertically */
     flex-direction: column;
-    /* background-color: red; */
+    /* background-color: blue; */
 }
 
-.para-intro p{
+.para-intro p {
     text-align: left;
     margin-left: 0.5rem;
     font-weight: 600;
@@ -126,24 +127,24 @@ button:active {
 
 .para-intro p:nth-of-type(3) {
     color: #9C9C9C;
-    font-size: 0.3rem;
+    font-size: 0.35rem;
     margin-top: 0.1rem;
 }
 
 .profile {
     /* background-color: black; */
-    width: 20%;
     display: flex;
-    justify-content: center; /* align vertically */
+    justify-content: center;
+    /* align vertically */
     flex-direction: column;
     align-items: flex-end;
 }
 
-.profile img{
+.profile img {
     width: 1.2rem;
-    margin-right: 1rem;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius: 1rem;
+    cursor: pointer;
 }
 
 .project {
@@ -152,13 +153,13 @@ button:active {
     display: flex;
 }
 
-.titles{
+.titles {
     /* background-color: red; */
     height: 10%;
     width: 100%;
 }
 
-.titles p{
+.titles p {
     font-size: 0.5rem;
     color: black;
     text-align: left;
@@ -166,24 +167,24 @@ button:active {
     font-weight: 600;
 }
 
-.project-tiles{
+.project-tiles {
     /* background-color: rgb(34, 255, 0); */
     display: flex;
     overflow-x: auto;
 }
 
-.project-tiles::-webkit-scrollbar{
+.project-tiles::-webkit-scrollbar {
     height: 0.3rem;
 }
 
-.project-tiles::-webkit-scrollbar-thumb{
-    background-color: #4AB07E;
+.project-tiles::-webkit-scrollbar-thumb {
+    /* background-color: #4AB07E; */
     border-radius: 1rem;
 }
 
-.project-tiles .project-box{
+.project-tiles .project-box {
     /* margin-top: 0.2rem; */
-    background-color: #FF4171;
+    /* background-color: #FF4171; */
     max-height: 3rem;
     min-width: 3.8rem;
     border-radius: 0.3rem;
@@ -194,18 +195,20 @@ button:active {
     margin-bottom: 0.2rem
 }
 
-.certi{
+.certi {
+    max-height: 6rem;
     min-width: 5rem;
 }
 
 .certifications {
     /* background-color: yellow; */
-    height: 35%;
+    height: 24%;
 }
 
 .nav-menu {
-    /* background-color: green; */
-    height: 20%;
+    background-color: rgb(43, 44, 44);
+    height: 11%;
+    width: 100%;
 }
 
 
@@ -216,13 +219,134 @@ button:active {
         font-size: 40px;
     }
 
-    .project-tiles::-webkit-scrollbar{
+    .project-tiles::-webkit-scrollbar {
         width: 0;
         visibility: hidden;
     }
 
-    .project-tiles::-webkit-scrollbar-thumb{
+    .project-tiles::-webkit-scrollbar-thumb {
         width: 0;
         visibility: hidden;
     }
+}
+
+.card-container {
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding-bottom: 10px;
+    width: 100%;
+    position: relative;
+}
+
+.card-container::-webkit-scrollbar {
+    overflow: hidden;
+}
+
+.card {
+    flex: 0 0 auto;
+    width: 160px;
+    height: 100px;
+    margin-right: 16px;
+    /* Add extra space between cards */
+    padding: 24px;
+    /* Add padding to cards */
+    background: linear-gradient(to bottom right, #1cd0fb, #2df7a5);
+    /* random gradient color */
+    /* add border radius */
+    border-radius: 10px;
+    text-align: center;
+    /* center text within cards */
+    color: white;
+    /* set text color to white */
+    font-size: 0.5rem;
+    /* set font size to large */
+    font-weight: bold;
+    display: grid;
+    place-content: center;
+    cursor: pointer;
+}
+
+.card:nth-child(1) {
+    background: linear-gradient(to bottom right, #1cd0fb, #2df7a5);
+    /* random gradient color */
+    margin-left: 10px;
+}
+
+.card:nth-child(2) {
+    background: linear-gradient(to bottom right, #ff4e44, #ff735b);
+    /* random gradient color */
+}
+
+.card:nth-child(3) {
+    background: linear-gradient(to bottom right, #ff7233, #ffc53d);
+    /* random gradient color */
+}
+
+.card:nth-child(4) {
+    background: linear-gradient(to bottom right, #908dfe, #e376f5);
+    /* random gradient color */
+}
+
+.card-scroll {
+    opacity: 0;
+    transition: opacity .5s ease-in-out;
+    visibility: hidden;
+}
+
+.project:hover .card-scroll,
+.certifications:hover .card-scroll {
+    display: block;
+    background-color: rgba(126, 126, 126, 0.484);
+    position: absolute;
+    color: white;
+    width: 50px;
+    height: 148px;
+    cursor: pointer;
+    margin: 0;
+    position: fixed;
+    z-index: 2;
+    border-radius: 0.2rem;
+    opacity: 1;
+    visibility: visible;
+}
+
+.certifications:hover .card-scroll {
+    height: 200px;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    right: 0;
+}
+
+.cert {
+    width: 250px;
+    height: 150px;
+}
+
+.menuicons{
+    height: 1.7rem;
+    display: flex;
+    color: white;
+    justify-content: center;
+    gap: 2.5rem;
+}
+
+.icons{
+    display: grid;
+    align-items: center;
+    place-items: center;
+    cursor: pointer;
+}
+
+.icons label {
+    font-size: 0.35rem;
+}
+
+.icons > :first-child{
+    font-size: 0.8rem;
 }

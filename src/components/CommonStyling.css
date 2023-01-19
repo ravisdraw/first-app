@@ -11,7 +11,7 @@
 .container {
     height: 100vh;
     width: 100vw;
-    background-color: black;
+    /* background-color: black; */
 }
 
 .public_api {
@@ -22,7 +22,7 @@
 }
 
 .navBar {
-    background-color: #D31638;
+    /* background-color: #D31638; */
     font-weight: bold;
     font-size: 0.5rem;
     padding: 0.3rem;
@@ -39,7 +39,7 @@
 }
 
 .cards {
-    background-color: white;
+    /* background-color: white; */
     height: 6rem;
     width: 4.5rem;
     border-radius: 0.2rem;
