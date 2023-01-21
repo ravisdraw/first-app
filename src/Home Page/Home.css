@@ -2,6 +2,7 @@
 
 .nav-bar {
     background: linear-gradient(to bottom right, #111111, #4b4b4b);
+    /* background-color: white; */
     min-height: 11%;
     width: 100%;
 }
@@ -10,6 +11,7 @@
     height: 1.7rem;
     display: flex;
     color: white;
+    /* color: black; */
     justify-content: center;
     gap: 2.5rem;
     width: 100%;
@@ -107,6 +109,7 @@
 
 .tag p:nth-of-type(1) {
     color: black;
+    /* color: white; */
     font-size: 0.8rem;
 }
 
@@ -126,6 +129,7 @@
 .titles p {
     font-size: 0.6rem;
     color: black;
+    /* color: white; */
     text-align: left;
     margin: 0.4rem;
     margin-top: 0;
@@ -206,7 +210,7 @@
 }
 
 .card:nth-child(3) {
-    background: linear-gradient(to right, #003B64, #FFF200);
+    background: linear-gradient(to right, #22c1c3, #fdbb2d);
 }
 
 .card:nth-child(4) {
@@ -214,7 +218,7 @@
 }
 
 .card:nth-child(5) {
-    background: linear-gradient(to right, #fa4747, #fd8585);
+    background: linear-gradient(to right, #ff5e62, #ff9966);
 }
 
 .card:nth-child(6) {
@@ -245,7 +249,7 @@
 }
 
 .certifications:hover .card-scroll {
-    height: 5rem;
+    height: 4.5rem;
 }
 
 .left {
@@ -278,8 +282,8 @@
     align-items: flex-start;
 }
 
-.cert-style .subtitle {
-    justify-content: baseline;
+.title>label {
+    line-height: 0.8rem;
 }
 
 .title>label {
@@ -290,6 +294,7 @@
 .subtitle>label {
     font-size: 0.4rem;
     padding: 0.3rem;
+    padding-top: 0;
 }
 
 .cert-icon {
@@ -343,6 +348,7 @@
     .proverb {
         display: block;
         color: white;
+        /* color: black; */
         text-align: center;
     }
 
@@ -400,7 +406,8 @@
         margin-top: 3rem;
     }
 
-    .project:hover .card-scroll {
+    .project:hover .card-scroll,
+    .certifications:hover .card-scroll {
         display: none;
     }
 

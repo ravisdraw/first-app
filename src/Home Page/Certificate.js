@@ -20,7 +20,9 @@ function Certificate() {
         python: "ion:logo-python",
         figma: "ph:figma-logo-duotone",
         angular: "ph:angular-logo-fill",
-        insta: "uil:instagram-alt"
+        insta: "uil:instagram-alt",
+        java: "fontisto:java",
+        bot: "bxs:bot"
     }
 
     const items = [
@@ -29,35 +31,40 @@ function Certificate() {
             title: "Basics of Python",
             subTitle: "Source: Udemy & Mothertong",
             icon: iconNames.python,
+            colors: 'linear-gradient(to right, #22c1c3, #fdbb2d)'
         },
         {
             id: 2,
-            title: "Basics of Java,C,C++",
-            subTitle: "Source: Udemy & Mothertong",
-            icon: iconNames.react,
+            title: "Basics of C,C++,JAVA",
+            subTitle: "Source: Udemy , Mothertong , Skillrack",
+            icon: iconNames.java,
+            colors: 'linear-gradient(to right, #FFDD00, #FBB034)'
         },
         {
             id: 3,
             title: "Basics of React",
             subTitle: "Source: Udemy & Mothertong",
             icon: iconNames.react,
+            colors: 'linear-gradient(to right, #009FFD, #2A2A72)'
         },
         {
             id: 4,
-            title: "Basics of ChatGPT",
-            subTitle: "Source: Udemy",
-            icon: iconNames.react,
-        },
-        {
-            id: 5,
             title: "Basics of Angular JS",
             subTitle: "Source: Udemy & Mothertong",
             icon: iconNames.angular,
+            colors: 'linear-gradient(to right, #ff5e62, #ff9966)'
+        },
+        {
+            id: 5,
+            title: "Basics of ChatGPT",
+            subTitle: "Source: Udemy",
+            icon: iconNames.bot,
+            colors: 'linear-gradient(to right, #184AEB, #71ECFE)'
         },
         {
             id: 6,
             title: "Other Certifications",
-            subTitle: "Includes: Automation,Designing.. ",
+            subTitle: "Automation, Designing tools, Type Writing etc.",
             icon: iconNames.react,
         }
     ]
@@ -70,7 +77,7 @@ function Certificate() {
             <div className='certifications'>
                 <div className="card-container" ref={cardContainerCertRef}>
                     {items.map(item =>
-                        <div className="card cert" key={item.id}>
+                        <div className="card cert" key={item.id} style={{ background: item.colors }}>
                             <div className="cert-text">
                                 <div className="cert-style title">
                                     <label> {item.title}</label>
@@ -86,10 +93,10 @@ function Certificate() {
 
 
 
-                    {items.length >= 7 &&
+                    {items.length >= 5 &&
                         <button className="card-scroll left" onClick={handleLeftClickTwo}>
                             <Icon icon="material-symbols:arrow-back-ios-rounded" width="32" height="32" /></button>}
-                    {items.length >= 7 && <button className="card-scroll right" onClick={handleRightClickTwo}>
+                    {items.length >= 5 && <button className="card-scroll right" onClick={handleRightClickTwo}>
                         <Icon icon="material-symbols:arrow-forward-ios-rounded" width="32" height="32" /> </button>}
                 </div>
             </div>
