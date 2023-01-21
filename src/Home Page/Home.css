@@ -31,10 +31,6 @@
     font-size: 0.35rem;
 }
 
-.icons> :first-child {
-    font-size: 0.8rem;
-}
-
 .profile img {
     width: 1.2rem;
     /* box-shadow: rgba(53, 53, 53, 0.24) 0px 3px 8px; */
@@ -76,13 +72,13 @@
 
 .nav-list>div {
     padding: 0.1rem;
-    border-radius: 0.2rem;
     height: 1.5rem;
     line-height: 1.5rem;
     display: flex;
     justify-content: left;
     align-items: center;
     margin-top: 0.3rem;
+    border-bottom: 1px solid #ccc;
 }
 
 .nav-list>div:hover {
@@ -152,38 +148,77 @@
 
 .card {
     flex: 0 0 auto;
-    width: 4rem;
-    height: 2.5rem;
+    width: 5.5rem;
+    height: 3.7rem;
+    ;
     margin-right: 0.4rem;
     margin-left: 0.4rem;
-    padding: 0.6rem;
-    background: linear-gradient(to bottom right, #1cd0fb, #2df7a5);
+    /* padding: 0.6rem; */
     border-radius: 0.25rem;
-    text-align: center;
     color: white;
     font-size: 0.5rem;
     font-weight: bold;
-    display: grid;
-    place-content: center;
     cursor: pointer;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card:active {
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transform: scale(1.03);
+    opacity: 0.8;
+}
+
+.project-icon {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.icon-style {
+    font-size: 1.5rem;
+}
+
+.project-title {
+    display: flex;
+    height: 40%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-title>label {
+    font-size: 0.5rem;
 }
 
 .card:nth-child(1) {
-    background: linear-gradient(to bottom right, #1cd0fb, #2df7a5);
+    background: linear-gradient(to right, #FFDD00, #FBB034);
     margin-left: 0.7rem;
 }
 
 .card:nth-child(2) {
-    background: linear-gradient(to bottom right, #ff4e44, #ff735b);
+    background: linear-gradient(to right, #009FFD, #2A2A72);
 }
 
 .card:nth-child(3) {
-    background: linear-gradient(to bottom right, #ff7233, #ffc53d);
+    background: linear-gradient(to right, #003B64, #FFF200);
 }
 
 .card:nth-child(4) {
-    background: linear-gradient(to bottom right, #908dfe, #e376f5);
+    background: linear-gradient(to right, #184AEB, #71ECFE);
+}
+
+.card:nth-child(5) {
+    background: linear-gradient(to right, #fa4747, #fd8585);
+}
+
+.card:nth-child(6) {
+    background: linear-gradient(to right, #6157FF, #EE49FD);
 }
 
 .card-scroll {
@@ -221,15 +256,57 @@
     right: 0;
 }
 
+.certi {
+    height: 54%;
+}
+
 .cert {
-    width: 6.25rem;
-    height: 3.75rem;
+    width: 7.5rem;
+    height: 4.5rem;
+    flex-direction: row;
+}
+
+.cert-text {
+    width: 60%;
+    height: 100%;
+}
+
+.cert-style {
+    height: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.cert-style .subtitle {
+    justify-content: baseline;
+}
+
+.title>label {
+    font-size: 0.6rem;
+    padding: 0.3rem;
+}
+
+.subtitle>label {
+    font-size: 0.4rem;
+    padding: 0.3rem;
+}
+
+.cert-icon {
+    height: 100%;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cert-icon>.icon-style {
+    font-size: 2.5rem;
 }
 
 .hamburger {
     display: none;
 }
-
 
 /********** RESPONSIVE SCREEN *********/
 
@@ -274,17 +351,28 @@
         font-size: 0.5rem;
         font-weight: 400;
         opacity: 0;
-        animation: fadein 8s;
+        filter: blur(5px);
+        animation: fadeInOut 30s ease-in-out infinite;
         animation-fill-mode: forwards;
     }
 
-    @keyframes fadein {
-        from {
+    @keyframes fadeInOut {
+        0% {
             opacity: 0;
         }
 
-        to {
+        10% {
             opacity: 1;
+            filter: blur(0);
+        }
+
+        80% {
+            opacity: 1;
+            filter: blur(0);
+        }
+
+        100% {
+            opacity: 0;
         }
     }
 
@@ -310,6 +398,10 @@
 
     .nav-list>.profile {
         margin-top: 3rem;
+    }
+
+    .project:hover .card-scroll {
+        display: none;
     }
 
 }

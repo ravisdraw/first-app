@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect, useMemo } from 'react'
 import './Home.css'
 import { Icon } from '@iconify/react';
 import profile from '../Assets/profile.png'
@@ -40,6 +40,16 @@ const profilepic = (
 
 function NavBar() {
     const [showSidebar, setShowSidebar] = useState(false);
+    const texts = useMemo(() => ["Hello World!", "Welcome!", "Hi There!", "Greetings!", "Practice leads to perfection"], []);
+    const [currentText, setCurrentText] = useState(texts[0]);
+
+    useEffect(() => {
+        const intervalId = setInterval(() => {
+            const nextText = texts[Math.floor(Math.random() * texts.length)];
+            setCurrentText(nextText);
+        }, 30000);
+        return () => clearInterval(intervalId);
+    }, [texts]);  // Add the missing dependency 'texts' here
 
     return (
         <div className='nav-bar'>
@@ -50,7 +60,7 @@ function NavBar() {
                         <Hamburger size={28} />
                     </div>
                     <div className="proverb">
-                        <p>Practice leads to perfection</p>
+                        <p>{currentText}</p>
                     </div>
                 </div>
 
@@ -72,7 +82,7 @@ function NavBar() {
             </div>
 
             <div className={`nav-menu ${showSidebar ? 'show' : 'hide'}`}>
-                <div className="nav-items nav-list">
+                <div className="nav-items">
                     <div className="nav-list">
                         {home}
                     </div>
