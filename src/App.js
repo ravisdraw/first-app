@@ -6,8 +6,14 @@ import Home from './Home Page/Home'
 
 import React from 'react'
 import { Routes, Route } from "react-router-dom"
+import { useEffect } from 'react';
 
 function App() {
+
+  useEffect(() => {
+    document.addEventListener('gesturestart', e => e.preventDefault());
+  }, []);
+
   return (
     <div className='body'>
       <Routes>

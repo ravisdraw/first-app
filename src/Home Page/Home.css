@@ -1,15 +1,9 @@
-.home {
-    overflow: hidden;
-}
-
-
 /********* NAV BAR **********/
 
 .nav-bar {
-    background: linear-gradient(to bottom right, #111111, #444444);
-    height: 11%;
+    background: linear-gradient(to bottom right, #111111, #4b4b4b);
+    min-height: 11%;
     width: 100%;
-    overflow: hidden;
 }
 
 .menuicons {
@@ -18,9 +12,10 @@
     color: white;
     justify-content: center;
     gap: 2.5rem;
+    width: 100%;
 }
 
-.icons {
+.icons>div {
     display: grid;
     align-items: center;
     place-items: center;
@@ -48,6 +43,57 @@
     padding: 0.2rem;
 }
 
+.proverb {
+    display: none;
+}
+
+.nav-menu {
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    background-color: rgba(22, 22, 22, 0.804);
+    transition: 0.3s;
+    z-index: 5;
+    transition: all 0.3s ease-out;
+    transform: translateX(-100%);
+}
+
+.nav-menu.show {
+    transform: translateX(0);
+}
+
+.nav-menu.hide {
+    transform: translateX(-100%);
+}
+
+.nav-items {
+    color: white;
+    font-size: 0.5rem;
+    padding: 0.2rem;
+    width: 80%;
+    text-align: left;
+}
+
+.nav-list>div {
+    padding: 0.1rem;
+    border-radius: 0.2rem;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 0.3rem;
+}
+
+.nav-list>div:hover {
+    color: #4AB07E;
+}
+
+.nav-list label {
+    font-size: 0.5rem;
+    margin-left: 0.5rem;
+}
+
 /********* TAG **********/
 
 .tag {
@@ -65,17 +111,17 @@
 
 .tag p:nth-of-type(1) {
     color: black;
-    font-size: 0.6rem;
+    font-size: 0.8rem;
 }
 
 .tag p:nth-of-type(2) {
     color: #4AB07E;
-    font-size: 0.5rem;
+    font-size: 0.7rem;
 }
 
 .tag p:nth-of-type(3) {
     color: #9C9C9C;
-    font-size: 0.35rem;
+    font-size: 0.5rem;
     margin-top: 0.1rem;
 }
 
@@ -86,6 +132,7 @@
     color: black;
     text-align: left;
     margin: 0.4rem;
+    margin-top: 0;
     font-weight: 600;
     padding: 0.3rem;
 }
@@ -212,14 +259,19 @@
         padding: 0.2rem;
     }
 
+    .hamburger:hover {
+        color: #4AB07E;
+    }
+
     .proverb {
+        display: block;
         color: white;
         text-align: center;
     }
 
     .proverb p {
         padding: 0.5rem;
-        font-size: 0.7rem;
+        font-size: 0.5rem;
         font-weight: 400;
         opacity: 0;
         animation: fadein 8s;
@@ -242,6 +294,22 @@
 
     .icons {
         display: none;
+    }
+
+    .tag p:nth-of-type(1) {
+        font-size: 0.7rem;
+    }
+
+    .tag p:nth-of-type(2) {
+        font-size: 0.6rem;
+    }
+
+    .tag p:nth-of-type(3) {
+        font-size: 0.4rem;
+    }
+
+    .nav-list>.profile {
+        margin-top: 3rem;
     }
 
 }
