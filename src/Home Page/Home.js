@@ -4,11 +4,13 @@ import Projects from './Projects'
 import Certificate from './Certificate'
 import Tag from './Tag'
 
+import { tagValues } from '../Assets/constants'
+
 function Home() {
     return (
-        <div className='home'>
+        <div className='homepage'>
             <Navbar />
-            <Tag />
+            <Tag tagValues={tagValues.home} />
             <Projects />
             <Certificate />
         </div>

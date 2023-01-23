@@ -1,10 +1,19 @@
+.homepage {
+    width: 100vw;
+    height: 100vh;
+}
+
+.navbar-fixed-top {
+    position: fixed;
+    top: 0;
+}
+
 /********* NAV BAR **********/
 
 .nav-bar {
     background: linear-gradient(to bottom right, #111111, #4b4b4b);
     /* background-color: white; */
-    min-height: 11%;
-    width: 100%;
+    height: 1.7rem;
 }
 
 .menuicons {
@@ -17,19 +26,21 @@
     width: 100%;
 }
 
-.icons>div {
+.icons .link-style {
     display: grid;
     align-items: center;
     place-items: center;
     cursor: pointer;
     padding: 0.2rem;
+    color: white;
 }
 
-.icons:hover {
+.icons :hover {
     color: #4AB07E;
 }
 
 .icons label {
+    color: white;
     font-size: 0.35rem;
 }
 
@@ -48,10 +59,10 @@
 .nav-menu {
     position: absolute;
     width: 60%;
-    height: 100%;
+    height: 100vh;
     background-color: rgba(22, 22, 22, 0.804);
     transition: 0.3s;
-    z-index: 5;
+    z-index: 10;
     transition: all 0.3s ease-out;
     transform: translateX(-100%);
 }
@@ -72,7 +83,7 @@
     text-align: left;
 }
 
-.nav-list>div {
+.nav-list>.link-style {
     padding: 0.1rem;
     height: 1.5rem;
     line-height: 1.5rem;
@@ -81,15 +92,22 @@
     align-items: center;
     margin-top: 0.3rem;
     border-bottom: 1px solid #ccc;
+    color: white;
 }
 
-.nav-list>div:hover {
+.nav-list .link-style:hover {
     color: #4AB07E;
 }
 
 .nav-list label {
     font-size: 0.5rem;
     margin-left: 0.5rem;
+    cursor: pointer;
+}
+
+.link-style {
+    text-decoration: none;
+
 }
 
 /********* TAG **********/
@@ -99,6 +117,8 @@
     justify-content: center;
     flex-direction: column;
     padding: 0.3rem;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
 
 .tag p {
@@ -167,6 +187,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-decoration: none;
 }
 
 .card:active {
@@ -246,6 +267,7 @@
     border-radius: 0.2rem;
     opacity: 1;
     visibility: visible;
+    border: none;
 }
 
 .certifications:hover .card-scroll {
@@ -320,9 +342,9 @@
         font-size: 35px;
     }
 
-    body {
+    /* body {
         overflow: hidden;
-    }
+    } */
 
     .menuicons {
         gap: 0.5rem;

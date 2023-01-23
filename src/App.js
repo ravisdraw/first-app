@@ -1,12 +1,10 @@
 import './style.css'
-
-// import ConnectPublicAPI from './components/ConnectPublicAPI'
-import WelcomePage from './Welcome Page/WelcomePage';
-import Home from './Home Page/Home'
-
 import React from 'react'
 import { Routes, Route } from "react-router-dom"
 import { useEffect } from 'react';
+
+import Home from './Home Page/Home'
+import Project from './Project Page/Project';
 
 function App() {
 
@@ -17,9 +15,8 @@ function App() {
   return (
     <div className='body'>
       <Routes>
-        <Route path="/" element={<WelcomePage />} />
-        <Route path="home" element={<Home />} />
-        {/* <Route path="intro/resume" element={<Resume />} /> */}
+        <Route path="/" exact element={<Home />} />
+        <Route path="/projects" element={<Project />} />
       </Routes>
     </div>
   );

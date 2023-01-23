@@ -1,12 +1,13 @@
 import React from 'react'
 import './Home.css'
 
-function Tag() {
+function Tag(props) {
+
     return (
         <div className='tag'>
-            <p>I’m Ravikumar,</p>
-            <p>a software Developer</p>
-            <p>With 2.5 years of  experience at TCS</p>
+            <p>{props.tagValues.title}</p>
+            <p>{props.tagValues.subTitle}</p>
+            <p>{props.tagValues.subSubTitle}</p>
         </div>
     )
 }
