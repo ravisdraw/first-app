@@ -7,6 +7,7 @@ import Tag from './Tag'
 import { tagValues } from '../Assets/constants'
 
 function Home() {
+
     return (
         <div className='homepage'>
             <Navbar />

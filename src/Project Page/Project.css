@@ -1,8 +1,6 @@
 .project-page {
     width: 100vw;
     height: 100vh;
-    position: relative;
-    background-color: pink;
 }
 
 .navbar-fixed-top {
@@ -10,70 +8,11 @@
     top: 0;
 }
 
-.card-project {
-    height: auto;
+.flipcard {
     display: grid;
-    grid-template-columns: repeat(auto-fill, 9rem);
+    grid-template-columns: repeat(auto-fill, 10.5rem);
     gap: 1rem;
+    padding-left: 1rem;
+    padding-top: 1rem;
     justify-content: center;
-    align-items: center;
-    overflow: hidden;
-}
-
-.card-project.blur {
-    background-color: rgba(0, 0, 0, 0.7);
-}
-
-.card-project::-webkit-scrollbar {
-    overflow: hidden;
-}
-
-.cards {
-    margin-top: 0.5rem;
-    background-image: url(https://i.imgur.com/BVkPScj.jpg);
-    height: 5.5rem;
-    width: 9rem;
-    border-radius: 0.2rem;
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    align-items: flex-end;
-    cursor: pointer;
-}
-
-.cards:active {
-    background-color: white;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    transform: scale(1.03);
-    opacity: 0.8;
-}
-
-.card-project>div:last-child {
-    margin-bottom: 0.5rem;
-}
-
-.cards>.project-title {
-    background-color: rgba(3, 2, 2, 0.403);
-    height: 28%;
-    border-bottom-left-radius: 0.2rem;
-    border-bottom-right-radius: 0.2rem;
-}
-
-.project-title label {
-    text-align: center;
-    font-weight: 500;
-    color: white;
-}
-
-.popup-card {
-    position: absolute;
-    background-color: rgb(255, 255, 255);
-    height: 50%;
-    width: 70%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 0.2rem;
-    z-index: 1;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
