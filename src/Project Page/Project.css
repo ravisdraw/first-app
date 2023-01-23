@@ -5,7 +5,6 @@
     background-color: pink;
 }
 
-/* 
 .navbar-fixed-top {
     position: fixed;
     top: 0;
@@ -77,42 +76,4 @@
     border-radius: 0.2rem;
     z-index: 1;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-} */
-
-/***********FLIP THE CARD*************/
-
-.flipcard {
-    position: relative;
-    width: 200px;
-    height: 300px;
-    perspective: 1000px;
-    transition: transform .8s;
-    cursor: pointer;
-}
-
-.flipcard.flipped {
-    transform: rotateY(180deg);
-}
-
-.flipcard .front,
-.flipcard .back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-}
-
-.flipcard .back {
-    top: 2rem;
-    backface-visibility: visible;
-}
-
-.flipcard .front {
-    background: rgb(244, 40, 40);
-    transform: rotateY(180deg);
-}
-
-.flipcard .back {
-    background: rgb(60, 81, 244);
-    transform: rotateY(0deg);
 }
