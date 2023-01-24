@@ -20,6 +20,11 @@ function NavBar() {
         return () => clearInterval(intervalId);
     }, [texts]);  // Add the missing dependency 'texts' here
 
+    useEffect(() => {
+        document.body.style.overflow = showSidebar ? "hidden" : "initial";
+    }, [showSidebar]);
+
+
     return (
         <div className='nav-bar'>
             <div className="menuicons">

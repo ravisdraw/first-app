@@ -16,6 +16,14 @@
     height: 1.7rem;
 }
 
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+
 .menuicons {
     height: 1.7rem;
     display: flex;
@@ -58,7 +66,7 @@
 
 .nav-menu {
     position: absolute;
-    width: 60%;
+    width: 70%;
     height: 100vh;
     background-color: rgba(22, 22, 22, 0.804);
     transition: 0.3s;

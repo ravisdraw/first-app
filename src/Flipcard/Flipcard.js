@@ -2,6 +2,9 @@ import React, { useState } from 'react'
 import './Flipcard.css'
 import { CSSTransition } from 'react-transition-group'
 
+import FlipcardFront from './FlipcardFront';
+import FlipcardBack from './FlipcardBack';
+
 function Flipcard() {
 
     const [showFront, setShowFront] = useState(true);
@@ -14,10 +17,13 @@ function Flipcard() {
                 classNames='flip'>
                 <div className="flipcards" onClick={() => {
                     setShowFront((value) => !value);
-                    document.getElementById('flipSound').play();
                 }}>
-                    <div className="front-side">Front</div>
-                    <div className="back-side">Back</div>
+                    <div className="front-side">
+                        <FlipcardFront />
+                    </div>
+                    <div className="back-side">
+                        <FlipcardBack />
+                    </div>
                 </div>
             </CSSTransition>
         </div>
