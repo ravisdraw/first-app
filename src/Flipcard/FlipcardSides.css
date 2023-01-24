@@ -2,33 +2,48 @@
 .FlipcardBack {
     height: 100%;
     width: 100%;
-    border-radius: 0.2rem;
-    background-image: url('https://i.imgur.com/BVkPScj.jpg');
-    background-size: cover;
-    background-position: center;
+    border-radius: 0.5rem;
     display: flex;
+    flex-direction: column;
     align-items: flex-end;
+    padding: 0.2rem;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.FlipcardFront {
+    background-color: #34495e;
+    gap: 0.2rem;
 }
 
 .FlipcardBack {
     background-color: white;
-    background-image: none;
     flex-direction: column;
-    cursor: default;
+    cursor: pointer;
+}
+
+.projectImage {
+    height: 75%;
+    width: 100%;
+    background-image: url('https://i.imgur.com/BVkPScj.jpg');
+    border-radius: 0.3rem;
+    background-size: cover;
+    background-position: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 
 .projectTitle {
     height: 25%;
-    background-color: rgba(255, 255, 255, 0.762);
+    background-color: white;
     border-bottom-left-radius: 0.2rem;
     border-bottom-right-radius: 0.2rem;
     padding-bottom: 0.2rem;
     width: 100%;
+    border-radius: 0.3rem;
     text-align: center;
 }
 
 .projectTitle>label {
-    font-size: 0.6rem;
+    font-size: 0.5rem;
     font-weight: 500;
 }
 
@@ -36,9 +51,15 @@
     height: 60%;
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+.Projectdescription>p:first-child {
+    color: #34495e;
+    text-align: left;
 }
 
 .Projectdescription>p {
@@ -68,8 +89,32 @@
     border: none;
     margin: 0.2rem;
     cursor: pointer;
+    background-color: #34495e;
+    color: white;
 }
 
 .projectButtons>button:last-child {
     width: 3.5rem;
 }
+
+.topicCovered {
+    height: 1.8rem;
+}
+
+.topicCovered {
+    /* opacity: 1;
+    filter: blur(5px); */
+    animation: fadeInOut 5s ease-in-out;
+    /* animation-fill-mode: forwards; */
+}
+
+/* @keyframes fadeInOut {
+    0% {
+        opacity: 1;
+        filter: blur(0);
+    }
+
+    80% {
+        opacity: 0;
+    }
+} */

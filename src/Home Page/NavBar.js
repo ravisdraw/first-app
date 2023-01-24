@@ -38,8 +38,8 @@ function NavBar() {
                 </div>
 
                 {navItems.map(item =>
-                    <div className="icons">
-                        <Link to={item.path} className='link-style'>
+                    <div className="icons" key={item.id}>
+                        <Link to={item.path} className='link-style' >
                             <Icon icon={item.icon} />
                             <label>{item.text}</label>
                         </Link>
@@ -48,9 +48,9 @@ function NavBar() {
 
             <div className={`nav-menu ${showSidebar ? 'show' : 'hide'}`}>
                 {navItems.map(item =>
-                    <div className="nav-items">
+                    <div className="nav-items" key={item.id}>
                         <div className="nav-list">
-                            <Link to={item.path} className='link-style'>
+                            <Link to={item.path} className='link-style' >
                                 <Icon icon={item.icon} />
                                 <label>{item.text}</label>
                             </Link>

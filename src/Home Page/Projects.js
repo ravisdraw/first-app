@@ -16,7 +16,7 @@ function Projects() {
     }
 
     return (
-        <div>
+        <div className='ProjectMain'>
             <div className='titles'>
                 <p>Projects</p>
             </div>

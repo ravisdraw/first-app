@@ -10,6 +10,7 @@ import Scrollup from '../Scrollup/Scrollup';
 import './Project.css'
 
 import { tagValues } from '../Assets/constants';
+import { projectDetails } from '../Assets/projectData';
 
 function Project() {
     return (
@@ -21,11 +22,8 @@ function Project() {
             <Tag tagValues={tagValues.projects} />
 
             <div className="flipcard">
-                <Flipcard />
-                <Flipcard />
-                <Flipcard />
-                <Flipcard />
-                <Flipcard />
+                {projectDetails.map(item =>
+                    <Flipcard cardData={item} key={item.id} />)}
             </div>
 
             {/* <TextAnimation /> */}

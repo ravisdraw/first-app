@@ -47,26 +47,31 @@ const iconNames = {
 
 export const navItems = [
     {
+        id: 1,
         path: '/',
         icon: iconNames.home,
         text: 'Home'
     },
     {
+        id: 2,
         path: '/',
         icon: iconNames.vsCode,
         text: 'Skills'
     },
     {
+        id: 3,
         path: '/',
         icon: iconNames.bracket,
         text: 'Experience'
     },
     {
+        id: 4,
         path: '/',
         icon: iconNames.phone,
         text: 'Hire Me'
     },
     {
+        id: 5,
         path: '/',
         icon: iconNames.profile,
         text: 'Profile'

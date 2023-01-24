@@ -5,9 +5,10 @@ import { CSSTransition } from 'react-transition-group'
 import FlipcardFront from './FlipcardFront';
 import FlipcardBack from './FlipcardBack';
 
-function Flipcard() {
+function Flipcard(props) {
 
     const [showFront, setShowFront] = useState(true);
+    const cardData = Object.values(props)[0];
 
     return (
         <div className='flipcard-container'>
@@ -19,10 +20,10 @@ function Flipcard() {
                     setShowFront((value) => !value);
                 }}>
                     <div className="front-side">
-                        <FlipcardFront />
+                        <FlipcardFront frontdata={cardData.front} />
                     </div>
                     <div className="back-side">
-                        <FlipcardBack />
+                        <FlipcardBack backdata={cardData.back} />
                     </div>
                 </div>
             </CSSTransition>
