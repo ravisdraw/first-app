@@ -13,6 +13,7 @@ function FlipcardBack(props) {
         window.location.href = '/Source_code';
     }
 
+    // eslint-disable-next-line
     const texts = useMemo(() => backData.keyPoints, []);
     // const [currentText, setCurrentText] = useState(texts[0]);
     const [index, setIndex] = useState(0); // Initialize the index state to 0
@@ -21,11 +22,13 @@ function FlipcardBack(props) {
         function loop() {
             setTimeout(() => {
                 setIndex(index + 1); // Increment the index by 1 every 5 seconds
+                // eslint-disable-next-line
                 if (index === texts.length - 1) setIndex(0);
                 // loop();
             }, 5000);
         }
         loop();
+        // eslint-disable-next-line
     }, [index]);
 
 
