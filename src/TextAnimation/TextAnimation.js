@@ -1,13 +1,25 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import './TextAnimation.css'
 
-function TextAnimation() {
-    return (
-        <div className='textbody'>
-            <h1 class='text t1'>C:\Users\ <span class='textclass'>Developers</span></h1>
-            <h1 class='text t2'> C:\Users\ Find US</h1>
-        </div>
+function TextAnimation({ text }) {
+    const [typedText, setTypedText] = useState('');
 
+    React.useEffect(() => {
+        let typed = typedText;
+        let typing = setInterval(() => {
+            if (typed.length === text.length) {
+                clearInterval(typing);
+                return;
+            }
+            setTypedText(typed += text[typed.length]);
+        }, 40);
+        return () => clearInterval(typing);
+    }, [typedText, text]);
+
+    return (
+        <div>
+            <p>{typedText}</p>
+        </div>
     );
 }
 
