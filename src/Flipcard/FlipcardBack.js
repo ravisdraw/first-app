@@ -4,9 +4,8 @@ import './FlipcardSides.css'
 function FlipcardBack(props) {
 
     const backData = Object.values(props)[0];
-
     const view = () => {
-        window.location.href = backData.view;
+        window.location.href = backData.viewUrl;
     }
 
     const sourceCode = () => {
