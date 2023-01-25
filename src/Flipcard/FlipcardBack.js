@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import './FlipcardSides.css'
 
 function FlipcardBack(props) {
@@ -14,24 +14,13 @@ function FlipcardBack(props) {
 
     const texts = backData.keyPoints;
 
-    const [currentText, setCurrentText] = useState(0);
-    const [intervalId, setIntervalId] = useState(null);
-
-    useEffect(() => {
-        const id = setInterval(() => {
-            setCurrentText(prevText => (prevText + 1) % texts.length);
-        }, 5000);
-        setIntervalId(id);
-        return () => clearInterval(intervalId);
-    }, []);
-
     return (
         <div className='FlipcardBack'>
             <div className="Projectdescription">
-                <p>Topics Covered</p>
+                <p>{backData.sourceCode}</p>
 
                 <p className='topicCovered'>
-                    {texts[currentText]}
+                    {texts[Math.floor(Math.random() * texts.length)]}
                 </p>
             </div>
             <div className="projectButtonWrapper">
