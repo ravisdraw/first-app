@@ -9,7 +9,7 @@ function FlipcardBack(props) {
     }
 
     const sourceCode = () => {
-        window.location.href = 'https://gist.github.com/ravisdraw/505f8fe16dffb24636542b0801a5b631';
+        window.location.href = '/source_code';
     }
 
     const texts = backData.keyPoints;
