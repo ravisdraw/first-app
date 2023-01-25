@@ -100,21 +100,3 @@
 .topicCovered {
     height: 1.8rem;
 }
-
-.topicCovered {
-    /* opacity: 1;
-    filter: blur(5px); */
-    animation: fadeInOut 5s ease-in-out;
-    /* animation-fill-mode: forwards; */
-}
-
-/* @keyframes fadeInOut {
-    0% {
-        opacity: 1;
-        filter: blur(0);
-    }
-
-    80% {
-        opacity: 0;
-    }
-} */
