@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import './SourceCode.css'
-// import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
-// import { irBlack } from 'react-syntax-highlighter/dist/cjs/styles/prism';
+import SyntaxHighlighter from 'react-syntax-highlighter';
+import { atomOneDark } from 'react-syntax-highlighter/dist/esm/styles/hljs';
+
 
 const SourceCode = ({ gistId, token }) => {
     const [gist, setGist] = useState({});
@@ -33,10 +34,13 @@ const SourceCode = ({ gistId, token }) => {
                     <p>Copy Text</p>
                 </div>
                 <div className="code-snippet">
-                    <p>Hello World!</p>
-                    {/* <SyntaxHighlighter language='html' style={irBlack}>
+                    <SyntaxHighlighter
+                        language="html"
+                        style={atomOneDark}
+                        wrapLongLines={true}
+                    >
                         {gist.files && Object.values(gist.files)[0].content}
-                    </SyntaxHighlighter> */}
+                    </SyntaxHighlighter>
                 </div>
             </div>
             <p>csscode</p>
