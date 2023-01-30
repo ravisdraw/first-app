@@ -3,15 +3,15 @@ export const projectDetails = [
         id: 1,
         front: {
             title: 'New Year Countdown',
-            img: 'https://i.imgur.com/89Z5Fxa.png'
+            img: 'https://i.imgur.com/Y0qKfmS.png'
         },
         back: {
             keyPoints: [
-                "Using JavaScript to access and calculate the remaining time until New Year",
-                "Updating the countdown display on the webpage in real-time",
-                "Formatting the countdown display(e.g. Days, Hours, Minutes, Seconds)",
-                "Synchronizing the countdown with the user's device's time.",
-                "Designing the layout and styles of the countdown using CSS and HTML"
+                "DOM selection: Select the HTML elements for displaying the countdown timer.",
+                "New Year's date: Calculate the date of the next New Year's.",
+                "Time difference: Calculate the time difference between current time and New Year's.",
+                "Display update: Continuously update the display with the calculated time until New Year's arrives.",
+                "Timers: Use JavaScript's setInterval to run the countdown logic every second."
             ],
             viewUrl: 'https://ravisdraw.github.io/js-projects/01%20NewYear%20CountDown/index.html',
             sourceCode: 'https://gist.github.com/ravisdraw/505f8fe16dffb24636542b0801a5b631'
@@ -21,18 +21,17 @@ export const projectDetails = [
         id: 2,
         front: {
             title: 'Digital Clock',
-            img: 'https://i.imgur.com/yEdrcfd.png',
+            img: 'https://i.imgur.com/vScDs74.png',
         },
         back: {
             keyPoints: [
-                "Displaying the current time using the JavaScript Date object to retrieve the current system time.",
-                "Continuously updating the time display every second using the setInterval function to call a time-updating function.",
-                "Utilizing Document Object Model (DOM) manipulation to dynamically update the time on the webpage.",
-                "Implementing error handling and edge cases to ensure accurate and consistent time display.",
-                "Ability to change clock background color and font.",
-                "An option to pause and resume the clock."
+                "Selects clock elements in HTML with class names '.h', '.m', '.s'",
+                "Formats hour, minute, and second values.",
+                "Updates clock element's innerHTML with formatted values.",
+                "Displays AM/PM based on hour value.",
+                "Runs the getTime function every second with setInterval."
             ],
-            viewUrl: 'https://ravisdraw.github.io/js-projects/01%20NewYear%20CountDown/index.html',
+            viewUrl: 'https://ravisdraw.github.io/js-projects/02%20Digital%20Clock/index.html',
             sourceCode: 'https://gist.github.com/ravisdraw/505f8fe16dffb24636542b0801a5b631'
         }
     },
@@ -40,18 +39,17 @@ export const projectDetails = [
         id: 3,
         front: {
             title: 'Analog Clock',
-            img: 'https://i.imgur.com/gspAaHy.png',
+            img: 'https://i.imgur.com/jYF20ip.png',
         },
         back: {
             keyPoints: [
-                "Displaying the current time using the JavaScript Date object to retrieve the current system time.",
-                "Continuously updating the time display every second using the setInterval function to call a time-updating function.",
-                "Utilizing Document Object Model (DOM) manipulation to dynamically update the time on the webpage.",
-                "Implementing error handling and edge cases to ensure accurate and consistent time display.",
-                "Ability to change clock background color and font.",
-                "An option to pause and resume the clock."
+                "Selects hour, minute, and second elements from the HTML document using querySelector.",
+                "Gets the current time using JavaScript's built-in Date object.",
+                "Calculates the degree of rotation for each hand based on the time.",
+                "Sets the CSS variable for rotation for each hand using style.setProperty method.",
+                "Uses setInterval to repeatedly call getTime every second to update the clock."
             ],
-            viewUrl: 'https://ravisdraw.github.io/js-projects/01%20NewYear%20CountDown/index.html',
+            viewUrl: 'https://ravisdraw.github.io/js-projects/03%20Analog%20Clock/index.html',
             sourceCode: 'https://gist.github.com/ravisdraw/505f8fe16dffb24636542b0801a5b631'
         }
     },
@@ -59,18 +57,17 @@ export const projectDetails = [
         id: 4,
         front: {
             title: 'Stopwatch',
-            img: 'https://i.imgur.com/TpitfJw.png',
+            img: 'https://i.imgur.com/c5HSpGf.png',
         },
         back: {
             keyPoints: [
-                "Displaying the current time using the JavaScript Date object to retrieve the current system time.",
-                "Continuously updating the time display every second using the setInterval function to call a time-updating function.",
-                "Utilizing Document Object Model (DOM) manipulation to dynamically update the time on the webpage.",
-                "Implementing error handling and edge cases to ensure accurate and consistent time display.",
-                "Ability to change clock background color and font.",
-                "An option to pause and resume the clock."
+                "Selects start, stop, reset buttons and time elements using querySelector.",
+                "Initializes variables for hour, minute, second, and millisecond.",
+                "UpdateValues function formats and displays time.",
+                "Digits are displayed in HTML elements using innerText.",
+                "Classes are added/removed to buttons to manage their appearance."
             ],
-            viewUrl: 'https://ravisdraw.github.io/js-projects/01%20NewYear%20CountDown/index.html',
+            viewUrl: 'https://ravisdraw.github.io/js-projects/04%20StopWatch/index.html',
             sourceCode: 'https://gist.github.com/ravisdraw/505f8fe16dffb24636542b0801a5b631'
         }
     },
@@ -78,18 +75,17 @@ export const projectDetails = [
         id: 5,
         front: {
             title: 'CSS Generator',
-            img: 'https://i.imgur.com/iSvDtxM.png',
+            img: 'https://i.imgur.com/ndZ5PMp.png',
         },
         back: {
             keyPoints: [
-                "Displaying the current time using the JavaScript Date object to retrieve the current system time.",
-                "Continuously updating the time display every second using the setInterval function to call a time-updating function.",
-                "Utilizing Document Object Model (DOM) manipulation to dynamically update the time on the webpage.",
-                "Implementing error handling and edge cases to ensure accurate and consistent time display.",
-                "Ability to change clock background color and font.",
-                "An option to pause and resume the clock."
+                "DOMContentLoaded event listener set",
+                "UpdateValues function updates bar_Val and coding based on bar input",
+                "Bar mousemove and change events trigger UpdateValues",
+                "UpdateValues called on page load",
+                "Copy function selects txtarea and copies to clipboard"
             ],
-            viewUrl: 'https://ravisdraw.github.io/js-projects/01%20NewYear%20CountDown/index.html',
+            viewUrl: 'https://ravisdraw.github.io/js-projects/05%20CSS%20Generator/index.html',
             sourceCode: 'https://gist.github.com/ravisdraw/505f8fe16dffb24636542b0801a5b631'
         }
     },
@@ -97,18 +93,17 @@ export const projectDetails = [
         id: 6,
         front: {
             title: 'Password Generator',
-            img: 'https://i.imgur.com/kinMspf.png',
+            img: 'https://i.imgur.com/ZYuduYe.png',
         },
         back: {
             keyPoints: [
-                "Displaying the current time using the JavaScript Date object to retrieve the current system time.",
-                "Continuously updating the time display every second using the setInterval function to call a time-updating function.",
-                "Utilizing Document Object Model (DOM) manipulation to dynamically update the time on the webpage.",
-                "Implementing error handling and edge cases to ensure accurate and consistent time display.",
-                "Ability to change clock background color and font.",
-                "An option to pause and resume the clock."
+                "Code uses DOM manipulation for input box, form, checkboxes",
+                "Limit for generated password is set to 8 characters",
+                "Password is generated by selecting random values from filtered checkbox's function",
+                "Functions for generating characters are small, large, numbers, and symbols",
+                "Generated password length can be controlled by max-min characters limit."
             ],
-            viewUrl: 'https://ravisdraw.github.io/js-projects/01%20NewYear%20CountDown/index.html',
+            viewUrl: 'https://ravisdraw.github.io/js-projects/08%20Password%20Generator/index.html',
             sourceCode: 'https://gist.github.com/ravisdraw/505f8fe16dffb24636542b0801a5b631'
         }
     },
@@ -116,18 +111,17 @@ export const projectDetails = [
         id: 7,
         front: {
             title: 'Gallery',
-            img: 'https://i.imgur.com/7BhqUgR.png',
+            img: 'https://i.imgur.com/DE4Kssh.png',
         },
         back: {
             keyPoints: [
-                "Displaying the current time using the JavaScript Date object to retrieve the current system time.",
-                "Continuously updating the time display every second using the setInterval function to call a time-updating function.",
-                "Utilizing Document Object Model (DOM) manipulation to dynamically update the time on the webpage.",
-                "Implementing error handling and edge cases to ensure accurate and consistent time display.",
-                "Ability to change clock background color and font.",
-                "An option to pause and resume the clock."
+                "Create a modal element in the body.",
+                "Select all images with class name '.images'.",
+                "Add 'active' class to modal on click.",
+                "Remove existing children of modal before adding big image.",
+                "Add click event to modal to remove 'active' class."
             ],
-            viewUrl: 'https://ravisdraw.github.io/js-projects/01%20NewYear%20CountDown/index.html',
+            viewUrl: 'https://ravisdraw.github.io/js-projects/07%20Photo%20Gallery/index.html',
             sourceCode: 'https://gist.github.com/ravisdraw/505f8fe16dffb24636542b0801a5b631'
         }
     },
@@ -135,37 +129,34 @@ export const projectDetails = [
         id: 8,
         front: {
             title: 'Photo Slider',
-            img: 'https://i.imgur.com/WZ62lPm.png',
+            img: 'https://i.imgur.com/SBz0Md1.png',
         },
         back: {
             keyPoints: [
-                "Displaying the current time using the JavaScript Date object to retrieve the current system time.",
-                "Continuously updating the time display every second using the setInterval function to call a time-updating function.",
-                "Utilizing Document Object Model (DOM) manipulation to dynamically update the time on the webpage.",
-                "Implementing error handling and edge cases to ensure accurate and consistent time display.",
-                "Ability to change clock background color and font.",
-                "An option to pause and resume the clock."
+                "Retrieve all the image preview elements with class imgPrev a",
+                "Add a click event listener to each image",
+                "Get the value of data-list attribute of the clicked image",
+                "Pass this value to the imageSlider function"
             ],
-            viewUrl: 'https://ravisdraw.github.io/js-projects/01%20NewYear%20CountDown/index.html',
+            viewUrl: 'https://ravisdraw.github.io/js-projects/10%20Image%20Slider/index.html',
             sourceCode: 'https://gist.github.com/ravisdraw/505f8fe16dffb24636542b0801a5b631'
         }
     },
     {
         id: 9,
         front: {
-            title: 'Take Notes',
-            img: 'https://i.imgur.com/puPmVDk.png',
+            title: 'Sticky Notes',
+            img: 'https://i.imgur.com/7SEQoMq.png',
         },
         back: {
             keyPoints: [
-                "Displaying the current time using the JavaScript Date object to retrieve the current system time.",
-                "Continuously updating the time display every second using the setInterval function to call a time-updating function.",
-                "Utilizing Document Object Model (DOM) manipulation to dynamically update the time on the webpage.",
-                "Implementing error handling and edge cases to ensure accurate and consistent time display.",
-                "Ability to change clock background color and font.",
-                "An option to pause and resume the clock."
+                "Uses local storage to store sticky notes",
+                "Creates note element with textarea, change, and double-click events",
+                "Double-click event prompts for note deletion",
+                "Note content updates on change and saves to local storage",
+                "Button adds new empty note with unique id, inserted before button"
             ],
-            viewUrl: 'https://ravisdraw.github.io/js-projects/01%20NewYear%20CountDown/index.html',
+            viewUrl: 'https://ravisdraw.github.io/js-projects/06%20Sticky%20Notes/index.html',
             sourceCode: 'https://gist.github.com/ravisdraw/505f8fe16dffb24636542b0801a5b631'
         }
     },
@@ -173,18 +164,17 @@ export const projectDetails = [
         id: 10,
         front: {
             title: 'Image Search',
-            img: 'https://i.imgur.com/7BDzurM.png',
+            img: 'https://i.imgur.com/DiiqBot.png',
         },
         back: {
             keyPoints: [
-                "Displaying the current time using the JavaScript Date object to retrieve the current system time.",
-                "Continuously updating the time display every second using the setInterval function to call a time-updating function.",
-                "Utilizing Document Object Model (DOM) manipulation to dynamically update the time on the webpage.",
-                "Implementing error handling and edge cases to ensure accurate and consistent time display.",
-                "Ability to change clock background color and font.",
-                "An option to pause and resume the clock."
+                "Keyup event listener added to searchBox",
+                "ImgBox and btns elements selected using querySelectorAll",
+                "Filter applied to imgBox elements when searchBox changes",
+                "Display property set to block or none based on searchText",
+                "Click event listener added to btns, active class removed and added based on target filter"
             ],
-            viewUrl: 'https://ravisdraw.github.io/js-projects/01%20NewYear%20CountDown/index.html',
+            viewUrl: 'https://ravisdraw.github.io/js-projects/09%20Image%20Filter/index.html',
             sourceCode: 'https://gist.github.com/ravisdraw/505f8fe16dffb24636542b0801a5b631'
         }
     }

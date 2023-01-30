@@ -6,29 +6,39 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    padding: 0.2rem;
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-}
-
-.FlipcardFront {
-    background-color: #34495e;
-    gap: 0.2rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
 }
 
 .FlipcardBack {
     background-color: white;
     flex-direction: column;
     cursor: pointer;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 }
+
+.blur {
+    filter: blur(5px);
+}
+
 
 .projectImage {
     height: 75%;
     width: 100%;
-    background-image: url('https://i.imgur.com/BVkPScj.jpg');
     border-radius: 0.3rem;
-    background-size: cover;
-    background-position: center;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 0.3rem;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
 }
 
 .projectTitle {
@@ -36,10 +46,13 @@
     background-color: white;
     border-bottom-left-radius: 0.2rem;
     border-bottom-right-radius: 0.2rem;
-    padding-bottom: 0.2rem;
     width: 100%;
     border-radius: 0.3rem;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
     text-align: center;
+    padding-bottom: 0.2rem;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 }
 
 .projectTitle>label {
@@ -60,6 +73,7 @@
 .Projectdescription>p:first-child {
     color: #34495e;
     text-align: left;
+    margin-top: 0.3rem;
 }
 
 .Projectdescription>p {
