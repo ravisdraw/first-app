@@ -9,7 +9,7 @@ function FlipcardBack(props) {
     }
 
     const sourceCode = () => {
-        window.location.href = '/source_code';
+        window.location.href = backData.sourceCode;
     }
 
     const texts = backData.keyPoints;
@@ -17,7 +17,7 @@ function FlipcardBack(props) {
     return (
         <div className='FlipcardBack'>
             <div className="Projectdescription">
-                <p>{backData.sourceCode}</p>
+                <p>Key Concepts</p>
 
                 <p className='topicCovered'>
                     {texts[Math.floor(Math.random() * texts.length)]}

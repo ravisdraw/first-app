@@ -5,7 +5,6 @@ import { useEffect } from 'react';
 
 import Home from './Home Page/Home'
 import Project from './Project Page/Project';
-import ChatGPTclone from './ChatGPTclone/ChatGPTclone';
 
 function App() {
 
@@ -18,7 +17,6 @@ function App() {
       <Routes>
         <Route path="/" exact element={<Home />} />
         <Route path="/projects" element={<Project />} />
-        <Route path="/source_code" element={<ChatGPTclone />} />
       </Routes>
     </div>
   );
