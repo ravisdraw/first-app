@@ -17,9 +17,7 @@ function TextAnimation({ text }) {
     }, [typedText, text]);
 
     return (
-        <div className='textAnimation'>
-            <p>{typedText}</p>
-        </div>
+        <p>{typedText}</p>
     );
 }
 

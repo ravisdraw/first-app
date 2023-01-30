@@ -1,5 +1,6 @@
 import React from 'react'
 import './Home.css'
+import TextAnimation from '../TextAnimation/TextAnimation'
 
 function Tag(props) {
 
@@ -7,7 +8,7 @@ function Tag(props) {
         <div className='tag'>
             <p>{props.tagValues.title}</p>
             <p>{props.tagValues.subTitle}</p>
-            <p>{props.tagValues.subSubTitle}</p>
+            <TextAnimation text={props.tagValues.subSubTitle} />
         </div>
     )
 }

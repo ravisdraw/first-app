@@ -8,10 +8,12 @@ import { tagValues } from '../Assets/constants'
 
 function Home() {
 
+    let item = tagValues.filter((item) => item.id === Number(0))[0];
+
     return (
         <div className='homepage'>
             <Navbar />
-            <Tag tagValues={tagValues.home} />
+            <Tag tagValues={item} />
             <Projects />
             <Certificate />
         </div>

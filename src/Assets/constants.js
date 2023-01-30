@@ -14,20 +14,26 @@ export const quotes = [
     "Risk more. Achieve more."
 ];
 
-export const tagValues = {
-    home: {
-        id: 1,
+export const tagValues = [
+    {
+        id: 0,
         title: 'Ravikumar R,',
         subTitle: 'a software Developer',
         subSubTitle: 'With 2.5 years of  experience at TCS'
     },
-    projects: {
-        id: 2,
+    {
+        id: 1,
         title: 'JavaScript Projects',
         subTitle: 'Only using HTML/CSS/JS',
         subSubTitle: 'Project Counts : 10'
+    },
+    {
+        id: 2,
+        title: 'React JS Projects',
+        subTitle: 'Only using JSX,CSS,Required Public APIs',
+        subSubTitle: 'Project Counts : 5'
     }
-}
+]
 
 const iconNames = {
     react: "mdi:react",

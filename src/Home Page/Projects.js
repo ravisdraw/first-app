@@ -23,14 +23,16 @@ function Projects() {
             <div className='project'>
                 <div className="card-container" ref={cardContainerRef}>
                     {icons.map(item =>
-                        <Link to="/projects" className="card" key={item.id}>
+                        <Link to={`/projects/${item.id}`} className="card" key={item.id}>
                             <div className="project-icon">
                                 <Icon icon={item.icon} className='icon-style' />
                             </div>
                             <div className="project-title">
                                 <label> {item.text}</label>
                             </div>
-                        </Link>)}
+                        </Link>
+                    )
+                    }
 
                     {/* Arrow Buttons */}
                     {icons.length >= 7 &&

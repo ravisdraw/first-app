@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import { Icon } from '@iconify/react';
+import { Link } from 'react-router-dom';
 
 import { cardItems } from '../Assets/constants';
 
@@ -26,7 +27,7 @@ function Certificate() {
             <div className='certifications'>
                 <div className="card-container" ref={cardContainerCertRef}>
                     {cardItems.map(item =>
-                        <div className="card cert" key={item.id} style={{ background: item.colors }}>
+                        <Link to="/certificates" className="card cert" key={item.id} style={{ background: item.colors }}>
                             <div className="cert-text">
                                 <div className="cert-style title">
                                     <label> {item.title}</label>
@@ -38,7 +39,7 @@ function Certificate() {
                             <div className="cert-icon">
                                 <Icon icon={item.icon} className='icon-style' />
                             </div>
-                        </div>)}
+                        </Link>)}
 
 
 

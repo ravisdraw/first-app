@@ -5,6 +5,7 @@ import { useEffect } from 'react';
 
 import Home from './Home Page/Home'
 import Project from './Project Page/Project';
+import Certificate from './Certificate Page/Certificate';
 
 function App() {
 
@@ -16,7 +17,8 @@ function App() {
     <div className='body'>
       <Routes>
         <Route path="/" exact element={<Home />} />
-        <Route path="/projects" element={<Project />} />
+        <Route path="/projects/:id" element={<Project />} />
+        <Route path="/certificates" element={<Certificate />} />
       </Routes>
     </div>
   );
