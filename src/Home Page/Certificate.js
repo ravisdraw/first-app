@@ -27,7 +27,7 @@ function Certificate() {
             <div className='certifications'>
                 <div className="card-container" ref={cardContainerCertRef}>
                     {cardItems.map(item =>
-                        <Link to="/certificates" className="card cert" key={item.id} style={{ background: item.colors }}>
+                        <Link to={`/certificate/${item.id}`} className="card cert" key={item.id} style={{ background: item.colors }}>
                             <div className="cert-text">
                                 <div className="cert-style title">
                                     <label> {item.title}</label>

@@ -25,14 +25,14 @@ export const tagValues = [
         id: 1,
         title: 'JavaScript Projects',
         subTitle: 'Only using HTML/CSS/JS',
-        subSubTitle: 'Project Counts : 10'
+        subSubTitle: 'Project Count : 10'
     },
     {
         id: 2,
         title: 'React JS Projects',
         subTitle: 'Only using JSX,CSS,Required Public APIs',
-        subSubTitle: 'Project Counts : 5'
-    }
+        subSubTitle: 'Project Count : 5'
+    },
 ]
 
 const iconNames = {
@@ -89,43 +89,49 @@ export const cardItems = [
     {
         id: 1,
         title: "Basics of Python",
-        subTitle: "Source: Udemy & Mothertong",
+        subTitle: "Source: Udemy , Mothertong , Skillrack",
         icon: iconNames.python,
-        colors: 'linear-gradient(to right, #22c1c3, #fdbb2d)'
+        colors: 'linear-gradient(to right, #22c1c3, #fdbb2d)',
+        subSubTitle: 'Certification count : 10'
     },
     {
         id: 2,
         title: "Basics of C,C++,JAVA",
         subTitle: "Source: Udemy , Mothertong , Skillrack",
         icon: iconNames.java,
-        colors: 'linear-gradient(to right, #FFDD00, #FBB034)'
+        colors: 'linear-gradient(to right, #FFDD00, #FBB034)',
+        subSubTitle: 'Certification count : 10'
     },
     {
         id: 3,
         title: "Basics of React",
         subTitle: "Source: Udemy & Mothertong",
         icon: iconNames.react,
-        colors: 'linear-gradient(to right, #009FFD, #2A2A72)'
+        colors: 'linear-gradient(to right, #009FFD, #2A2A72)',
+        subSubTitle: 'Certification count : 10'
     },
     {
         id: 4,
         title: "Basics of Angular JS",
         subTitle: "Source: Udemy & Mothertong",
         icon: iconNames.angular,
-        colors: 'linear-gradient(to right, #ff5e62, #ff9966)'
+        colors: 'linear-gradient(to right, #ff5e62, #ff9966)',
+        subSubTitle: 'Certification count : 10'
     },
     {
         id: 5,
-        title: "Basics of ChatGPT",
+        title: "Selenium Automation",
         subTitle: "Source: Udemy",
         icon: iconNames.bot,
-        colors: 'linear-gradient(to right, #184AEB, #71ECFE)'
+        colors: 'linear-gradient(to right, #184AEB, #71ECFE)',
+        subSubTitle: 'Certification count : 10'
     },
     {
         id: 6,
         title: "Other Certifications",
-        subTitle: "Automation, Designing tools, Type Writing etc.",
+        subTitle: "ChatGPT, Designing tools, Type Writing etc.",
         icon: iconNames.react,
+        subSubTitle: 'Certification count : 10'
     }
 ]
 
