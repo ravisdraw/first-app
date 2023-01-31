@@ -19,6 +19,8 @@ function Certificate() {
 
             <div className="epuraa-card">
                 <EpuraaCard />
+                <EpuraaCard />
+                <EpuraaCard />
             </div>
         </div>
     )
