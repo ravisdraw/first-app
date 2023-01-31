@@ -5,7 +5,7 @@ function EpuraaCard() {
 
     const [isVisible, setIsVisible] = useState(true);
 
-    const imgurl = 'https://images.unsplash.com/photo-1633356122102-3fe601e05bd2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80'
+    const imgurl = 'https://i.imgur.com/fR6y0JG.png'
 
     return (
         // className={`epuraa-wrapper ${isVisible ? "show" : "hide"}`}
