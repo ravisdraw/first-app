@@ -14,14 +14,22 @@ function EpuraaCard() {
                 <div className={`certificate-title-card ${isVisible ? "show" : "title-hide"}`}>
                     <p>Basics of Python</p>
                 </div>
-            </div>
-            <div className={`close-btn ${isVisible ? "btn-hide" : "btn-show"}`} onClick={() => setIsVisible(!isVisible)}>
-                <span>x</span>
+                <div className={`close-btn ${isVisible ? "btn-hide" : "btn-show"}`} onClick={() => setIsVisible(!isVisible)}>
+                    <span>x</span>
+                </div>
             </div>
             <div className={`second-card ${isVisible ? "hide" : "second-show"}`}>
                 <div className="content">
-                    <div className="topics-covered-title">Title</div>
-                    <div className="topics-covered">Topics covered</div>
+                    <div className="topics-covered-title">Topics Covered</div>
+                    <div className="topics-covered">
+                        <ul>
+                            <li>1. Classes and Strings in python</li>
+                            <li>2. Classes and Strings in python</li>
+                            <li>3. Classes and Strings in python</li>
+                            <li>4. Classes and Strings in python</li>
+                            <li>5. Classes and Strings in python</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
 
