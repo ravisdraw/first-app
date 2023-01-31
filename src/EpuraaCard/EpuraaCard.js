@@ -11,14 +11,14 @@ function EpuraaCard() {
         // className={`epuraa-wrapper ${isVisible ? "show" : "hide"}`}
         <div className='epuraa-wrapper'>
             <div className="titlecard">
-                <div className={`certificate-title-card ${isVisible ? "show" : "title-hide"}`}>
+                <div className={`certificate-title-card ${isVisible ? "title-show main" : "title-hide"}`}>
                     <p>Basics of Python</p>
                 </div>
                 <div className={`close-btn ${isVisible ? "btn-hide" : "btn-show"}`} onClick={() => setIsVisible(!isVisible)}>
                     <span>x</span>
                 </div>
             </div>
-            <div className={`second-card ${isVisible ? "hide" : "second-show"}`}>
+            <div className={`second-card ${isVisible ? "second-hide" : "second-show"}`}>
                 <div className="content">
                     <div className="topics-covered-title">Topics Covered</div>
                     <div className="topics-covered">
@@ -38,7 +38,7 @@ function EpuraaCard() {
                     <img src={imgurl} alt="React" />
                 </div>
                 <div className='certificate-title'>
-                    <p>Post-ironic helvetica mlkshk, readymade whatever meditation blog offal irony. Pop-up kickstarter seitan iPhone.</p>
+                    <p>Post-ironic helvetica mlkshk, readymade whatever meditation blog offal irony.</p>
                 </div>
                 <div className="detail-button">
                     <button type="button" onClick={() => setIsVisible(!isVisible)}>Details

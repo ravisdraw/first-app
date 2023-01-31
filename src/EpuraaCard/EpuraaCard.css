@@ -15,7 +15,7 @@
 .second-card {
     position: relative;
     width: 8rem;
-    height: 10rem;
+    height: 9.2rem;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     overflow: hidden;
     transition: all 0.3s ease-in-out;
@@ -29,7 +29,7 @@
 
 .topics-covered-title {
     width: 100%;
-    height: 12%;
+    height: 12.5%;
     background-color: white;
     font-size: 0.6rem;
     font-weight: 500;
@@ -85,6 +85,10 @@
     right: 0;
 }
 
+.main {
+    transition-delay: 0.3s;
+}
+
 .title-hide {
     transition-delay: 0.4s;
     right: -100%;
@@ -106,13 +110,12 @@
 }
 
 .close-btn {
-    background-color: rgba(45, 45, 45, 0.821);
+    background-color: rgb(33, 33, 33);
     height: 100%;
     width: 16%;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 0.1rem;
     color: white;
     position: absolute;
     cursor: pointer;
@@ -120,7 +123,7 @@
 }
 
 .close-btn>span {
-    font-size: 0.4rem;
+    font-size: 0.5rem;
 }
 
 .first-card {
@@ -142,6 +145,7 @@
     height: 60%;
     overflow: hidden;
     transition: all 0.5s ease-in-out;
+    border-radius: 0;
 }
 
 .certificate-image>img {
@@ -182,30 +186,32 @@
 .detail-button>button {
     width: 2rem;
     height: 1rem;
+    margin-top: 0.2rem;
     margin-left: 0.2rem;
     font-size: 0.4rem;
     border: none;
-    background-color: white;
+    background-color: rgb(33, 33, 33);
     text-align: left;
     padding: 0.2rem;
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: black;
+    color: white;
 }
 
 .arrow {
     font-size: 0.25rem;
     text-align: center;
     margin-left: 0.1rem;
-    color: black;
-}
-
-.detail-button>button:hover {
-    background-color: rgb(211, 211, 211);
+    color: rgb(255, 255, 255);
 }
 
 .hide {
+    height: 0;
+}
+
+.second-hide {
+    transition-delay: 0.3s;
     height: 0;
 }
