@@ -22,7 +22,7 @@ function Certificate() {
     return (
         <div>
             <div className='titles'>
-                <p>Certifications</p>
+                <p>Portfolio</p>
             </div>
             <div className='certifications'>
                 <div className="card-container" ref={cardContainerCertRef}>

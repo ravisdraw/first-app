@@ -5,11 +5,13 @@ function FlipcardBack(props) {
 
     const backData = Object.values(props)[0];
     const view = () => {
-        window.location.href = backData.viewUrl;
+        const newTab = window.open(backData.viewUrl, '_blank');
+        newTab.focus();
     }
 
     const sourceCode = () => {
-        window.location.href = backData.sourceCode;
+        const newTab = window.open(backData.sourceCode, '_blank');
+        newTab.focus();
     }
 
     const texts = backData.keyPoints;

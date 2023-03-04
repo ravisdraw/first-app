@@ -1,3 +1,5 @@
+import certificateData from "./certificateData";
+
 export const quotes = [
     "Dream big. Achieve bigger.",
     "Practice, unlock potential",
@@ -88,51 +90,44 @@ export const navItems = [
 export const cardItems = [
     {
         id: 1,
-        title: "Basics of Python",
+        title: "Certifications",
         subTitle: "Source: Udemy , Mothertong , Skillrack",
         icon: iconNames.python,
         colors: 'linear-gradient(to right, #22c1c3, #fdbb2d)',
-        subSubTitle: 'Certification count : 10'
+        subSubTitle: 'Certifications Count : ' + certificateData.length
     },
     {
         id: 2,
-        title: "Basics of C,C++,JAVA",
-        subTitle: "Source: Udemy , Mothertong , Skillrack",
-        icon: iconNames.java,
+        title: "Skills",
+        subTitle: "Angular , Python , React , Automation",
+        icon: iconNames.vsCode,
         colors: 'linear-gradient(to right, #FFDD00, #FBB034)',
         subSubTitle: 'Certification count : 10'
     },
     {
         id: 3,
-        title: "Basics of React",
-        subTitle: "Source: Udemy & Mothertong",
-        icon: iconNames.react,
+        title: "Experience",
+        subTitle: "Angular , Selenium Automation ",
+        icon: iconNames.bracket,
         colors: 'linear-gradient(to right, #009FFD, #2A2A72)',
         subSubTitle: 'Certification count : 10'
     },
     {
         id: 4,
-        title: "Basics of Angular JS",
-        subTitle: "Source: Udemy & Mothertong",
-        icon: iconNames.angular,
+        title: "Hire Me",
+        subTitle: "Ready to tackle challenges",
+        icon: iconNames.profile,
         colors: 'linear-gradient(to right, #ff5e62, #ff9966)',
         subSubTitle: 'Certification count : 10'
     },
     {
         id: 5,
-        title: "Selenium Automation",
-        subTitle: "Source: Udemy",
-        icon: iconNames.bot,
+        title: "Profile",
+        subTitle: "Discover my unique story",
+        icon: iconNames.profile,
         colors: 'linear-gradient(to right, #184AEB, #71ECFE)',
         subSubTitle: 'Certification count : 10'
     },
-    {
-        id: 6,
-        title: "Other Certifications",
-        subTitle: "ChatGPT, Designing tools, Type Writing etc.",
-        icon: iconNames.react,
-        subSubTitle: 'Certification count : 10'
-    }
 ]
 
 export const icons = [
