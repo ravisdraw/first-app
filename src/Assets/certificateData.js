@@ -110,7 +110,7 @@ const certificateData = [
     {
         id: 6,
         front: {
-            title: 'Daily Challenges',
+            title: '600 - Daily Challenges',
             img: 'https://i.imgur.com/NzHQQXo.png',
             desc: 'Task of completing daily problem solving Questions'
         },
@@ -132,7 +132,7 @@ const certificateData = [
     {
         id: 7,
         front: {
-            title: 'Daily Challenges',
+            title: '500 - Daily Challenges',
             img: 'https://i.imgur.com/nDIss0u.png',
             desc: 'Task of completing daily problem solving Questions'
         },
@@ -154,7 +154,7 @@ const certificateData = [
     {
         id: 8,
         front: {
-            title: 'Daily Challenges',
+            title: '400 - Daily Challenges',
             img: 'https://i.imgur.com/Ag8ur1q.png',
             desc: 'Task of completing daily problem solving Questions'
         },
@@ -176,7 +176,7 @@ const certificateData = [
     {
         id: 9,
         front: {
-            title: 'Daily Challenges',
+            title: '300 - Daily Challenges',
             img: 'https://i.imgur.com/x48FssS.png',
             desc: 'Task of completing daily problem solving Questions'
         },
@@ -198,30 +198,8 @@ const certificateData = [
     {
         id: 10,
         front: {
-            title: 'Daily Challenges',
+            title: '200 - Daily Challenges',
             img: 'https://i.imgur.com/DwXjERH.png',
-            desc: 'Task of completing daily problem solving Questions'
-        },
-        back: {
-            keyPoints: [
-                "1. Daily practice: offering daily problem solving challenges to help users develop their problem solving skills",
-                "2. Variety of problems: presenting a range of problems to help users gain exposure to different types of problems",
-                "3. Difficulty levels: providing problems at different difficulty levels to challenge users at their level of ability",
-                "4. Multiple languages: allowing users to solve problems using any programming language they are comfortable with",
-                "5. Learning resources: providing learning resources to help users learn new problem solving techniques and programming concepts",
-                "6. Gamification: using gamification elements like leaderboards, badges, and rewards to encourage users to participate and improve their problem solving skills",
-                "7. Community: building a community of problem solvers where users can collaborate, share knowledge, and learn from one another",
-                "8. Feedback: providing feedback on users' solutions to help them improve their problem solving skills",
-                "9. Certification: offering certifications to recognize users' problem solving achievements and showcase their skills to potential employers",
-                "10. Career support: providing career support to help users apply their problem solving skills and find job opportunities"
-            ]
-        }
-    },
-    {
-        id: 10,
-        front: {
-            title: 'Daily Challenges',
-            img: 'https://i.imgur.com/QLzV4hr.png',
             desc: 'Task of completing daily problem solving Questions'
         },
         back: {
@@ -242,7 +220,29 @@ const certificateData = [
     {
         id: 11,
         front: {
-            title: 'internship',
+            title: '50 - Daily Challenges',
+            img: 'https://i.imgur.com/QLzV4hr.png',
+            desc: 'Task of completing daily problem solving Questions'
+        },
+        back: {
+            keyPoints: [
+                "1. Daily practice: offering daily problem solving challenges to help users develop their problem solving skills",
+                "2. Variety of problems: presenting a range of problems to help users gain exposure to different types of problems",
+                "3. Difficulty levels: providing problems at different difficulty levels to challenge users at their level of ability",
+                "4. Multiple languages: allowing users to solve problems using any programming language they are comfortable with",
+                "5. Learning resources: providing learning resources to help users learn new problem solving techniques and programming concepts",
+                "6. Gamification: using gamification elements like leaderboards, badges, and rewards to encourage users to participate and improve their problem solving skills",
+                "7. Community: building a community of problem solvers where users can collaborate, share knowledge, and learn from one another",
+                "8. Feedback: providing feedback on users' solutions to help them improve their problem solving skills",
+                "9. Certification: offering certifications to recognize users' problem solving achievements and showcase their skills to potential employers",
+                "10. Career support: providing career support to help users apply their problem solving skills and find job opportunities"
+            ]
+        }
+    },
+    {
+        id: 12,
+        front: {
+            title: 'Internship',
             img: 'https://i.imgur.com/VRAndqz.png',
             desc: 'Task of completing daily problem solving Questions'
         },

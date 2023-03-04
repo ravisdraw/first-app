@@ -13,7 +13,6 @@ function Certificate() {
 
     let { id } = useParams();
     let item = cardItems.filter((item) => item.id === Number(id))[0];
-    console.log(item);
 
     return (
         <div className="certificate-page">
@@ -21,8 +20,8 @@ function Certificate() {
             <Tag tagValues={item} />
 
             <div className="epuraa-card">
-                {certificateData.map(item =>
-                    <EpuraaCard cardData={item} key={item.id} />)}
+                {certificateData.map(value =>
+                    <EpuraaCard cardData={value} key={value.id} />)}
             </div>
 
         </div>

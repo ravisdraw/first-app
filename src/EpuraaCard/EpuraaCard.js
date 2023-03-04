@@ -7,7 +7,6 @@ function EpuraaCard(props) {
     const [isVisible, setIsVisible] = useState(true);
     const [isLoaded, setIsLoaded] = useState(false);
     const cardData = Object.values(props)[0];
-    console.log(cardData.front.title);
 
     return (
         <div className='epuraa-wrapper'>
