@@ -51,7 +51,8 @@ img {
 
 .projectTitle {
     height: 25%;
-    background: linear-gradient(to bottom right, #111111, #4b4b4b);
+    /* background: linear-gradient(to bottom right, #111111, #4b4b4b); */
+    background-color: #2A2344;
     border-bottom-left-radius: 0.2rem;
     border-bottom-right-radius: 0.2rem;
     width: 100%;
@@ -112,8 +113,8 @@ img {
     border: none;
     margin: 0.2rem;
     cursor: pointer;
-    /* background-color: #34495e; */
-    background: linear-gradient(to bottom right, #111111, #4b4b4b);
+    background-color: #2A2344;
+    /* background: linear-gradient(to bottom right, #111111, #4b4b4b); */
     color: white;
 }
 

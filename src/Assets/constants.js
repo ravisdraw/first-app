@@ -62,7 +62,7 @@ export const navItems = [
     },
     {
         id: 2,
-        path: '/',
+        path: '/portfolio/2',
         icon: iconNames.vsCode,
         text: 'Skills'
     },

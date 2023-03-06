@@ -7,7 +7,8 @@ import { Link } from 'react-router-dom';
 import { quotes } from '../Assets/constants';
 
 
-function NavBar() {
+function NavBar(props) {
+    const [activeIndex, setActiveIndex] = useState(props.index);
     const [showSidebar, setShowSidebar] = useState(false);
     const texts = useMemo(() => quotes, []);
     const [currentText, setCurrentText] = useState(texts[Math.floor(Math.random() * texts.length)]);
@@ -24,6 +25,12 @@ function NavBar() {
         document.body.style.overflow = showSidebar ? "hidden" : "initial";
     }, [showSidebar]);
 
+    // setActiveIndex(props);
+
+    function handleTitleClick(index) {
+        setActiveIndex(index);
+    }
+
 
     return (
         <div className='nav-bar'>
@@ -37,11 +44,12 @@ function NavBar() {
                     </div>
                 </div>
 
-                {navItems.map(item =>
+                {navItems.map((item, index) =>
                     <div className="icons" key={item.id}>
                         <Link to={item.path} className='link-style' >
-                            <Icon icon={item.icon} />
-                            <label>{item.text}</label>
+                            {/* <Icon icon={item.icon} /> */}
+                            <label className={activeIndex === index ? 'nav-active' : ''}
+                                onClick={() => handleTitleClick(index)}>{item.text}</label>
                         </Link>
                     </div>)}
             </div>

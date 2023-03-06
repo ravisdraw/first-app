@@ -12,7 +12,7 @@ function Home() {
 
     return (
         <div className='homepage'>
-            <Navbar />
+            <Navbar index={0} />
             <Tag tagValues={item} />
             <Projects />
             <Certificate />
